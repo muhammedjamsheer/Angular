@@ -1,0 +1,14 @@
+1.Including TinyMCE within the Application
+
+a)run in command prompt of angular
+  $ npm install @tinymce/tinymce-angular
+b)Loading the component in module.component.ts or app component.ts  
+  import { EditorModule } from '@tinymce/tinymce-angular';
+    imports: [
+    BrowserModule,
+    EditorModule // <- Important part
+  ],
+  
+c)Use the editor in your templates like this:
+  <editor apiKey="test" [init]="{plugins: 'link'}"></editor>
+ 
