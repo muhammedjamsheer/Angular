@@ -11,4 +11,8 @@ b)Loading the component in module.component.ts or app component.ts
   
 c)Use the editor in your templates like this:
   <editor apiKey="test" [init]="{plugins: 'link'}"></editor>
- 
+  
+  _______________________________________________________________________________________________________
+  
+2.Integrate AdminLTE theme to Angular Project
+ https://www.prishusoft.com/blog/Integrate-AdminLTE-theme-to-Angular-Project.html
