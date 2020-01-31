@@ -1,3 +1,71 @@
+1.Add bootsrap
+    npm install bootstrap --save
+
+    style.css ---> @import "~bootstrap/dist/css/bootstrap.min.css"
+    or
+	Next, open angular.json 
+	"styles": [
+	  "src/styles.css",
+	  "node_modules/bootstrap/dist/css/bootstrap.min.css"
+	],
+............................................................
+2.Add angular material
+    ng add @angular/material@^7.3.7
+
+    app.module.ts
+    -------------
+    import { MatButtonModule , MatFormFieldModule, MatInputModule, MatIconModule } from '@angular/material';
+    import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+    imports: [
+    BrowserAnimationsModule,
+    MatButtonModule , MatFormFieldModule, MatInputModule, MatIconModule
+    ],
+   
+
+    <mat-form-field class="mat-input" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" type="text">
+        <mat-icon matSuffix>email_outline</mat-icon>
+    </mat-form-field>
+    
+    style.css --->  @import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";             
+    index.html--->  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+   
+.............................................................
+3.Angular notifier
+    npm install angular-notifier
+
+    app.module.ts
+        import { NotifierModule } from 'angular-notifier'; 
+        imports: [NotifierModule],
+
+    your.component.ts
+    	import { NotifierService } from "angular-notifier";
+    	constructor( private notifier: NotifierService )
+    	this.notifier.notify("success", "You are awesome! I mean it!");
+
+    app.component.html
+        <notifier-container></notifier-container> 
+..............................................................
+Angular modal
+   https://www.npmjs.com/package/ngb-modal
+................................................................
+Angular loading spinner
+   https://jsonworld.com/demo/add-loader-in-angular6-application  
+.................................................................
+Angular cnofirmation popover
+   https://www.npmjs.com/package/angular-confirmation-popover
+..................................................................................................
+   
+array of multiple checkbox
+https://stackoverflow.com/questions/40927167/angular-reactiveforms-producing-an-array-of-checkbox-values
+
+pass data from one component to another
+https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/#Parent-to-Child-Sharing-Data-via-Input
+
+
+.....................................................................................................................
 1.Including TinyMCE within the Application
 
 a)run in command prompt of angular
