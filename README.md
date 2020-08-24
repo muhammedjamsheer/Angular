@@ -44,4 +44,5 @@ a
 a
 a
 a
-id=there_you_go
+
+<a id=there_you_go  name="some-text">My header with a lot of words, and punctuation</a>
