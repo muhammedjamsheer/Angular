@@ -2,7 +2,7 @@ me# Angular Interview Questions & Answers
 
 | No.| Questions    |
 | -------------    | ------------- |
-| 1  | <a name="there_you_go"></a>Take me there  |
+| 1  | [Take me there](#there_you_go)  |
 | 2  | Content Cell  |
 
 
@@ -44,4 +44,4 @@ a
 a
 a
 a
-[Take me there](#there_you_go)
+id=there_you_go
