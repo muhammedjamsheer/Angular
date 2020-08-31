@@ -45,6 +45,9 @@
 1. styles / stylesUrls - To provide an inline style, we need to use styles, and to provide an external file path or URL, we need to use styleUrls.
 1. providers – it is used to inject different types of custom services within the component
 
+#### Life Cycle of a Component
+1.ngOnChanges - This event executes every time, a value of an input control within the component has been changed. This event activates first when the value of a bound property has been changed.
+
    
         
     
