@@ -39,10 +39,10 @@
    *  metadata (defined using decorator).
    
 #### @Component Metadata
-1.selector – A component can be used by the selector expression. 
-2.templayeUrl  - This property always accepts the HTML file name with its related file path.
-3.styles / stylesUrls - To provide an inline style, we need to use styles, and to provide an external file path or URL, we need to use styleUrls.
-4.providers – it is used to inject different types of custom services within the component
+1. selector – A component can be used by the selector expression. 
+2. templayeUrl  - This property always accepts the HTML file name with its related file path.
+3. styles / stylesUrls - To provide an inline style, we need to use styles, and to provide an external file path or URL, we need to use styleUrls.
+4. providers – it is used to inject different types of custom services within the component
 
    
         
