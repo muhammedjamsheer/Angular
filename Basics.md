@@ -18,3 +18,8 @@
 * We can add custom animations, directives, and services.
 * Hierarchical Dependency Injection structure (Parent-child).
 * Provision to facilitate RESTful services and client-server communication.
+
+### Project Folder Structure
+
+###### package.json 
+       – package.json is basically a JSON file that contains all information related to the required packages for the project. 
