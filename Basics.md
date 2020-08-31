@@ -54,6 +54,12 @@
 1. __ngAfterViewInit__ – This life cycle method executes when the component completes the rendering of its view full.
 1. __ngOnDestroy__  - This method will be executed when we want to destroy the Angular components. This method is very useful for unsubscribing the observables and detaching the event handlers to avoid memory leaks.
 
+
+#### Data bindings in Angular
+
+1. __interpolation__
+   Interpolation uses the braces expression  to display the data from the component to the view.  
+
    
         
     
