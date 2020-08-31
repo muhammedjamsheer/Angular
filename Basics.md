@@ -46,8 +46,9 @@
 1. providers – it is used to inject different types of custom services within the component
 
 #### Life Cycle of a Component
-1. __ngOnChanges__ - This event executes every time, a value of an input control within the component has been changed. This event activates first when the value of a bound property has been changed.
-1. __ngOnInit__ – This event executed at the time of Component initialization. This event is called only once, just after the ngOnChanges() events. This event is mainly used to initialize data in a component.
+1. __ngOnChanges__ - This event executes every time, a value of an input control within the component has been changed. This event activates first when the value of a bound                         property has been changed.
+1. __ngOnInit__ – This event executed at the time of Component initialization. This event is called only once, just after the ngOnChanges() events. This event is mainly used to                 initialize data in a component.
+1. __ngDoCheck__ – This event is executed every time when the input properties of a component are checked.
 1. __ngAfterViewInit__ – This life cycle method executes when the component completes the rendering of its view full.
 1. __ngOnDestroy__  - This method will be executed when we want to destroy the Angular components. This method is very useful for unsubscribing the observables and detaching the event handlers to avoid memory leaks.
 
