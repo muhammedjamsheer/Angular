@@ -46,7 +46,8 @@
 1. providers – it is used to inject different types of custom services within the component
 
 #### Life Cycle of a Component
-1.ngOnChanges - This event executes every time, a value of an input control within the component has been changed. This event activates first when the value of a bound property has been changed.
+1.__ngOnChanges__ - This event executes every time, a value of an input control within the component has been changed. This event activates first when the value of a bound property has been changed.
+1. __ngOnInit__ – This event executed at the time of Component initialization. This event is called only once, just after the ngOnChanges() events. This event is mainly used to initialize data in a component.
 
    
         
