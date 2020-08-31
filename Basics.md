@@ -20,11 +20,12 @@
 * Provision to facilitate RESTful services and client-server communication.
 
 ### Project Folder Structure
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
+1. e2e - This folder is for an end to end testing purposes. It contains the configuration files related to performing the unit test of the projects.
+1. node_modules - This folder contains the downloaded packages as per the configuration.
+1. src - This folder contains the actual source code. It contains 3 subfolders as – 
+   1. app - App folder contains the Angular project-related files like components, HTML files, etc.
+   1. assets - Assets folder contains any static files like images, stylesheets, custom javascript library files.
+   1. environments - Environments folder contains the environment-related files which are required during  build of the projects.
 ###### package.json 
         
    package.json is basically a JSON file that contains all information related to the required packages for the project.
