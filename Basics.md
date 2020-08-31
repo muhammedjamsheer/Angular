@@ -22,4 +22,5 @@
 ### Project Folder Structure
 
 ###### package.json 
-       – package.json is basically a JSON file that contains all information related to the required packages for the project. 
+        
+   package.json is basically a JSON file that contains all information related to the required packages for the project.
