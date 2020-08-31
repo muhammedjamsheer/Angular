@@ -35,10 +35,11 @@
 * A component is defined using the @Component decorator.
 * Every component consists of three parts,
    *  Template which loads the view for the component, 
-   *  Stylesheet which defines the look and feel for the component, 
-   *  class that  contains the code required for the html template
+   *  class that  contains properties and methods that supports the view.
+   *  metadata (defined using decorator).
+   
 #### @Component Metadata
-1.selector – A component can be used by the selector expression. Many people treat components like a custom HTML tag because finally when we want to use the component in the HTML file, we need to provide the selector just like an HTML tag.
+1.selector – A component can be used by the selector expression. 
    
         
     
