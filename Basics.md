@@ -57,8 +57,10 @@
 
 #### Data bindings in Angular
 
-1. __interpolation__
-   Interpolation uses the braces expression  to display the data from the component to the view.  
+In one-way binding, any changes in the component will directly reflect inside the HTML template but, vice-versa is not possible. Whereas, it is possible in two-way binding
+1. __Interpolation__  - Interpolation uses the braces expression  to display  data from the component to the view. 
+1. __Property binding__ -in Property binding  we can bind the DOM properties of an HTML element to a component's property. Property binding uses the square brackets [ ] syntax.
+1. __Event Binding__ it works with the event activities of the UI elements like click-event, blur-event
 
    
         
