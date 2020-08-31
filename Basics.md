@@ -28,7 +28,7 @@
    1. environments - Environments folder contains the environment-related files which are required during  build of the projects.
 #### Different Config Files   
 1.package.json-it is basically a JSON file that contains all information related to the required packages for the project.
-2.angular.json – angular.json file is an Angular Application Environment based JSON file which contains all the information related to the project build and deployment.
+1.angular.json – angular.json file is an Angular Application Environment based JSON file which contains all the information related to the project build and deployment.
   It tells the system which files need to change when we use ng build or ng serve command. 
         
     
