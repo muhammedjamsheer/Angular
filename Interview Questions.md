@@ -8,11 +8,15 @@
 |3 | [What are lifecycle hooks available?](#What-are-lifecycle-hooks-available)|
 |4 | [What is the difference between constructor and ngOnInit?](#what-is-the-difference-between-constructor-and-ngoninit)|
 |4 | [What is Modules?](#What-is-Modules)|
+|4 | [What is a template?](#What-is-Modules)|
 |4 | [What is ViewEncapsulation?](#What-is-ViewEncapsulation)|
 |4 | [What is  data binding?](#What-is-ViewEncapsulation)|
 |4 | [What is  one way and two way data binding?](#What-is-ViewEncapsulation)|
 |4 | [What is  Directives?](#What-is-ViewEncapsulation)|
 |4 | [What are different types of compilation in Angular?](#What-is-ViewEncapsulation)|
+|4 | [What is a service?](#What-is-ViewEncapsulation)|
+
+
 
 
 
@@ -117,6 +121,9 @@ In one-way binding, any changes in the component class will directly reflect ins
 ###  1. What is  directives?
 A directive is a class in Angular that is declared with a @Directive decorator.\
 
+###  1. What is  templates?
+A template is a HTML view where you can display data by binding controls to properties of an Angular component.
+
 ###### When to use a directive?
 Consider an application, where multiple components need to have similar functionalities. The norm thing to do is by adding this functionality individually to every component but, this task is tedious to perform. In such a situation, one can create a directive having the required functionality and then, import the directive to components which require this functionality.
 
@@ -148,5 +155,9 @@ The CLI command for aot compilation is -ng build --aot ng server –aot
 **AOT** is more suitable for the production environment whereas **JIT** is much suited for local development.
 
 
+###  1. What is  service?
+A service is used when a common functionality needs to be provided to various modules.\
+The main objective of a service is to share data, functions with different components of an Angular application.\
+A service is defined using a @Injectable decorator. A function defined inside a service can be invoked from any component or directive.
 
 
