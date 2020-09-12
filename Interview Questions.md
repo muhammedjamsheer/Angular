@@ -135,15 +135,14 @@ In one-way binding, any changes in the component class will directly reflect ins
 
 **[⬆ Back to Top](#table-of-contents)**
 
-###  1. What is  directives?
-A directive is a class in Angular that is declared with a @Directive decorator.\
-
-**[⬆ Back to Top](#table-of-contents)**
-
 ###  1. What is  templates?
 A template is a HTML view where you can display data by binding controls to properties of an Angular component.
 
 **[⬆ Back to Top](#table-of-contents)**
+
+
+###  1. What is  directives?
+A directive is a class in Angular that is declared with a @Directive decorator.\
 
 ###### When to use a directive?
 Consider an application, where multiple components need to have similar functionalities. The norm thing to do is by adding this functionality individually to every component but, this task is tedious to perform. In such a situation, one can create a directive having the required functionality and then, import the directive to components which require this functionality.
@@ -244,10 +243,10 @@ Angular Router is a mechanism in which navigation happens from one view to the n
 ###  1.What is Reactive form?
 
 Find some Angular classes that are used in creating reactive form.
-**FormControl**: Tracks the value and validation state of a form control.
-**FormGroup**: Tracks the value and validity state of a group of FormControl.
-**FormArray**: Tracks the value and validity state of array of FormControl, FormGroup and FormArray.
-**FormBuilder**: Creates a big reactive form with minimum code in Angular. 
+**FormControl**: Tracks the value and validation state of a form control.\
+**FormGroup**: Tracks the value and validity state of a group of FormControl.\
+**FormArray**: Tracks the value and validity state of array of FormControl, FormGroup and FormArray.\
+**FormBuilder**: Creates a big reactive form with minimum code in Angular. \
 
 **Set and Patch Value**
 The FormGroup methods setValue and patchValue both sets the value in form controls of FormGroup.
