@@ -6,6 +6,7 @@
 |2 | [Why we use angular?](#Why-we-use-angular)|
 |3 | [What is Angular Component?](#What-is-Angular-Component)|
 |3 | [What are lifecycle hooks available?](#What-are-lifecycle-hooks-available)|
+|4 | [What is the difference between constructor and ngOnInit?](#what-is-the-difference-between-constructor-and-ngoninit)|
 
 
 
@@ -44,6 +45,11 @@ Angular is one of the best frameworks for developing any Single Page Application
 1. **ngOnDestroy:** This method will be executed when we want to destroy the Angular components.  This method is very useful for unsubscribing the observables and detaching the     event handlers to avoid memory leaks..
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### 1. What is the difference between constructor and ngOnInit?
+* constructor is a default method in TypeScript classes which is normally used for the initialization purpose.
+* ngOnInit is a life cycle hook method in  Angular, especially used to define Angular bindings.
+* The constructor getting called first before ngOnInit method. 
 
 
 
