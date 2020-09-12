@@ -85,10 +85,6 @@ A root module imports BrowserModule, whereas a feature module imports CommonModu
 Data binding is a concept in Angular and allows to define communication between a component and the DOM.
 There are four forms of data binding
 
-12. ### What is a data binding?
-Data binding is a core concept in Angular and allows to define communication between a component and the DOM .\
-There are four forms of data binding(divided as 3 categories) which differ in the way the data is flowing.
-
 1.**From the Component to the DOM:**
 
 **Interpolation:** {{ value }}: String interpolation uses the double curly braces {{ }} to display data from the component
@@ -100,12 +96,12 @@ There are four forms of data binding(divided as 3 categories) which differ in th
 ```html
 <input type="email" [value]="user.email">
 ```
-2. **From the DOM to the Component:**\
+2.**From the DOM to the Component:**\
 **Event binding: (event)=”function”:** Event Binding is works with the DOM event activities of the UI elements like click-event, blur-event 
 ```html
 <button (click)="logout()"></button>
 ```
-3. **Two-way binding:**\
+3.**Two-way binding:**\
    [(ngModel)]=”value”: Two-way data binding allows to have the data flow both ways. For example, in the below code snippet, both the email DOM input and component email property are in sync
 ```html
 <input type="email" [(ngModel)]="user.email">
