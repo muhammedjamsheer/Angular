@@ -5,17 +5,17 @@
 |1 | [What is Angular Framework?](#what-is-angular-framework)|
 |2 | [Why we use angular?](#Why-we-use-angular)|
 |3 | [What is Angular Component?](#What-is-Angular-Component)|
-|3 | [What are lifecycle hooks available?](#What-are-lifecycle-hooks-available)|
-|4 | [What is the difference between constructor and ngOnInit?](#what-is-the-difference-between-constructor-and-ngoninit)|
-|4 | [What is Modules?](#What-is-Modules)|
-|4 | [What is a template?](#What-is-Modules)|
-|4 | [What is ViewEncapsulation?](#What-is-ViewEncapsulation)|
-|4 | [What is  data binding?](#What-is-ViewEncapsulation)|
-|4 | [What is  one way and two way data binding?](#What-is-ViewEncapsulation)|
-|4 | [What is  Directives?](#What-is-ViewEncapsulation)|
-|4 | [What are different types of compilation in Angular?](#What-is-ViewEncapsulation)|
-|4 | [What is a service?](#What-is-ViewEncapsulation)|
-|4 | [What is pipes?](#What-is-ViewEncapsulation)|
+|4 | [What are lifecycle hooks available?](#What-are-lifecycle-hooks-available)|
+|5 | [What is the difference between constructor and ngOnInit?](#what-is-the-difference-between-constructor-and-ngoninit)|
+|6 | [What is Modules?](#What-is-Modules)|
+|7 | [What is a template?](#What-is-Modules)|
+|8 | [What is ViewEncapsulation?](#What-is-ViewEncapsulation)|
+|9 | [What is  data binding?](#What-is-ViewEncapsulation)|
+|10 | [What is  one way and two way data binding?](#What-is-ViewEncapsulation)|
+|11 | [What is  Directives?](#What-is-ViewEncapsulation)|
+|12 | [What are different types of compilation in Angular?](#What-is-ViewEncapsulation)|
+|13 | [What is a service?](#What-is-ViewEncapsulation)|
+|14 | [What is pipes?](#What-is-ViewEncapsulation)|
 
 
 
