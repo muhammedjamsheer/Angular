@@ -182,4 +182,15 @@ A service is defined using a @Injectable decorator. A function defined inside a 
 {{ birthday | date:'dd/MM/yyyy'}}
 ```
 
+**Custom pipe** - Apart from built-inn pipes, we can write we own custom pipe.\
+  A pipe is a class decorated with pipe metadata @Pipe decorator, which you import from the core Angular library For example,
+```html
+{{ birthday | date:'dd/MM/yyyy'}}
+```
+
+**Async pipe** - The AsyncPipe subscribes to an observable or promise and returns the latest value it has emitted.
+```html
+{{ time | async }}
+```
+
 **[⬆ Back to Top](#table-of-contents)**
