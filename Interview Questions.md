@@ -9,36 +9,12 @@
 
 1. ### What is Angular Framework?
 
-    Angular is a **TypeScript-based open-source** front-end platform that makes it easy to build applications with in web/mobile/desktop. The major features of this framework such as declarative templates, dependency injection, end to end tooling, and many more other features are used to ease the development.
+Angular is basically is an open-source,client-side typescript-based  framework  for developing web applications.
+Angular is one of the best frameworks for developing any Single Page Application
 
-  **[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)**
 
 
 
 
-1. ### What is Angular Framework?
-
-    Angular is a **TypeScript-based open-source** front-end platform that makes it easy to build applications with in web/mobile/desktop. The major features of this framework such as declarative templates, dependency injection, end to end tooling, and many more other features are used to ease the development.
-
-  **[⬆ Back to Top](#table-of-contents)**
-  
-
-1. ### What is Angular Framework?
-
-    Angular is a **TypeScript-based open-source** front-end platform that makes it easy to build applications with in web/mobile/desktop. The major features of this framework such as declarative templates, dependency injection, end to end tooling, and many more other features are used to ease the development.
-
-  **[⬆ Back to Top](#table-of-contents)**
-  
-
-1. ### What is Angular Framework?
-
-    Angular is a **TypeScript-based open-source** front-end platform that makes it easy to build applications with in web/mobile/desktop. The major features of this framework such as declarative templates, dependency injection, end to end tooling, and many more other features are used to ease the development.
-
-  **[⬆ Back to Top](#table-of-contents)**
-  
-
-1. ### What is Angular Framework?
-
-    Angular is a **TypeScript-based open-source** front-end platform that makes it easy to build applications with in web/mobile/desktop. The major features of this framework such as declarative templates, dependency injection, end to end tooling, and many more other features are used to ease the development.
-
-  **[⬆ Back to Top](#table-of-contents)**
+*
