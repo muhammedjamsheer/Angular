@@ -9,6 +9,7 @@
 |4 | [What is the difference between constructor and ngOnInit?](#what-is-the-difference-between-constructor-and-ngoninit)|
 |4 | [What is Modules?](#What-is-Modules)|
 |4 | [What is ViewEncapsulation?](#What-is-ViewEncapsulation)|
+|4 | [What is  data binding?](#What-is-ViewEncapsulation)|
 
 
 
@@ -79,4 +80,16 @@ A root module imports BrowserModule, whereas a feature module imports CommonModu
 **[⬆ Back to Top](#table-of-contents)**
 
 
+###  1. What is  data binding??
+Data binding is a concept in Angular and allows to define communication between a component and the DOM.
+There are four forms of data binding
+
+1. **From the Component to the DOM:**  
+     – String interpolation uses the double curly braces {{ }} to display data from the component
+1. **From the DOM to the Component** 
+– Styles used in other HTML doesn’t spread to the component
+1. **Two-way binding** 
+– Styles defined in a component are visible to all components of the application
+
+**[⬆ Back to Top](#table-of-contents)**
 
