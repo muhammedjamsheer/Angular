@@ -16,6 +16,9 @@
 |12 | [What are different types of compilation in Angular?](#What-is-ViewEncapsulation)|
 |13 | [What is a service?](#What-is-ViewEncapsulation)|
 |14 | [What is pipes?](#What-is-ViewEncapsulation)|
+|15 | [What is metadata?](#What-is-ViewEncapsulation)|
+|15 | [What is the Difference between Promise and Observable in Angular.?](#What-is-ViewEncapsulation)|
+
 
 
 
@@ -30,7 +33,7 @@ Angular is one of the best frameworks for developing any Single Page Application
 
 
 ### 2.  Why we use angular?
-1. Angular is supported by google
+1. Angular is supported by google ,thus making the platform user-friendly
 1. Typescript used in angular is a product of microsoft ,typescript  helps make our code easier to read and avoid errors
 1. Angular is based on modular approch.The modules consits of components, directives, pipes, or services.Modules make application functionality organization easy and reusable      and  Modules also allow for lazy loading,
 1. Declarative UI - Angular uses HTML to render the UI of an application. HTML isa declarative language and is much easier to use than JavaScript.
@@ -162,6 +165,9 @@ The CLI command for aot compilation is -ng build --aot ng server –aot
 
 **AOT** is more suitable for the production environment whereas **JIT** is much suited for local development.
 
+###### Which One Is Better out of AOT and JIT?
+Answer: AOT reduces the load and bootstrap time of the application. The pages also load faster. Any errors are also shown during the time of application build itself. Hence, AOT is a better option
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ###  1. What is  service?
@@ -194,3 +200,17 @@ A service is defined using a @Injectable decorator. A function defined inside a 
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+###  1. What is  Metadata?
+Metadata is used to decorate a class so that it can configure the expected behavior of the class.\
+
+###  1.What is the Difference between Promise and Observable in Angular.?
+
+Promise can handle a single response for the same request\
+Observable can handle multiple responses for the same request.
+
+Promise is not cancellable in nature\
+Observable can be cancelled by using the unsubscribe() method.  
+
+Promise is not lazy and is executed immediately after creation.\
+Observable is lazy in nature and does not return any value until we subscribe using the subscribe() method.
