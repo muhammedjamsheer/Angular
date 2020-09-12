@@ -80,7 +80,7 @@ A root module imports BrowserModule, whereas a feature module imports CommonModu
 **[⬆ Back to Top](#table-of-contents)**
 
 
-###  1. What is  data binding??
+###  1. What is  data binding?
 Data binding is a concept in Angular and allows to define communication between a component and the DOM.
 There are four forms of data binding
 
@@ -90,17 +90,17 @@ There are four forms of data binding(divided as 3 categories) which differ in th
 
 1.**From the Component to the DOM:**
 
-**Interpolation:** {{ value }}: Adds the value of a property from the component
+**Interpolation:** {{ value }}: String interpolation uses the double curly braces {{ }} to display data from the component
 ```html
 <li>Name: {{ user.name }}</li>
 <li>Address: {{ user.address }}</li>
 ```
-**Property binding:** [property]=”value”: The value is passed from the component to the specified property or simple HTML attribute
+**Property binding:** [property]=”value”: Property binding uses the square brackets [ ] syntax. In Property binding we can bind data from component class to the the DOM properties of an HTML element.
 ```html
 <input type="email" [value]="user.email">
 ```
 2. **From the DOM to the Component:**
-**Event binding: (event)=”function”:** When a specific DOM event happens (eg.: click, change, keyup), call the specified method in the component
+**Event binding: (event)=”function”:** Event Binding is works with the DOM event activities of the UI elements like click-event, blur-event 
 ```html
 <button (click)="logout()"></button>
 ```
