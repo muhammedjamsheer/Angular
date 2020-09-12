@@ -84,15 +84,25 @@ A root module imports BrowserModule, whereas a feature module imports CommonModu
 Data binding is a concept in Angular and allows to define communication between a component and the DOM.
 There are four forms of data binding
 
-1. **From the Component to the DOM:**  
-     ##### Interpolation
-       String interpolation uses the double curly braces {{ }} to display data from the component
-     ##### Property binding:
-       String interpolation uses the double curly braces {{ }} to display data from the component
-1. **From the DOM to the Component** 
-     – Styles used in other HTML doesn’t spread to the component
-1. **Two-way binding** 
-     – Styles defined in a component are visible to all components of the application
+1. **From the Component to the DOM:**
+       **Interpolation:** {{ value }}: Adds the value of a property from the component
+        ```html
+        <li>Name: {{ user.name }}</li>
+        <li>Address: {{ user.address }}</li>
+        ```
+        **Property binding:** [property]=”value”: The value is passed from the component to the specified property or simple HTML attribute
+        ```html
+        <input type="email" [value]="user.email">
+        ```
+    2. **From the DOM to the Component:**
+        **Event binding: (event)=”function”:** When a specific DOM event happens (eg.: click, change, keyup), call the specified method in the component
+        ```html
+        <button (click)="logout()"></button>
+        ```
+    3. **Two-way binding:**
+        **Two-way data binding:** [(ngModel)]=”value”: Two-way data binding allows to have the data flow both ways. For example, in the below code snippet, both the email DOM            input and component email property are in sync
+        ```html
+        <input type="email" [(ngModel)]="user.email">
 
-**[⬆ Back to Top](#table-of-contents)**
+        ```
 
