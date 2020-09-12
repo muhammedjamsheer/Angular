@@ -134,11 +134,16 @@ Examples are *ngClass ,*ngStye
 These are directives with a template.
 
 
-###### What are different types of compilation in Angular?
+### 1. What are different types of compilation in Angular?
 Every Angular application consists of components and templates which the browser cannot understand. Therefore, all the Angular applications need to be compiled first before running inside the browser.
 
-Angular provides two types of compilation:
-**JIT(Just-in-Time) compilation**
-**AOT(Ahead-of-Time) compilation**
+Angular provides two types of compilation:**JIT(Just-in-Time) compilation** and **AOT(Ahead-of-Time) compilation**
+
+1.**JIT(Just-in-Time) compilation**  is a type of compilation that compiles your app in the browser at runtime It is the default way used by Angular.\
+ The commands used for JIT compilation are –ng build ng serve
+
+**AOT(Ahead-of-Time) compilation** is a type of compilation that compiles your app at build time\
+The CLI command for aot compilation is -ng build --aot ng server –aot
+
 
 
