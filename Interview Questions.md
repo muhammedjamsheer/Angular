@@ -12,6 +12,7 @@
 |4 | [What is  data binding?](#What-is-ViewEncapsulation)|
 |4 | [What is  one way and two way data binding?](#What-is-ViewEncapsulation)|
 |4 | [What is  Directives?](#What-is-ViewEncapsulation)|
+|4 | [What are different types of compilation in Angular?](#What-is-ViewEncapsulation)|
 
 
 
@@ -132,5 +133,12 @@ Examples are *ngClass ,*ngStye
 1. **Attribute directives** 
 These are directives with a template.
 
+
+###### What are different types of compilation in Angular?
+Every Angular application consists of components and templates which the browser cannot understand. Therefore, all the Angular applications need to be compiled first before running inside the browser.
+
+Angular provides two types of compilation:
+**JIT(Just-in-Time) compilation**
+**AOT(Ahead-of-Time) compilation**
 
 
