@@ -15,6 +15,7 @@
 |4 | [What is  Directives?](#What-is-ViewEncapsulation)|
 |4 | [What are different types of compilation in Angular?](#What-is-ViewEncapsulation)|
 |4 | [What is a service?](#What-is-ViewEncapsulation)|
+|4 | [What is pipes?](#What-is-ViewEncapsulation)|
 
 
 
@@ -118,11 +119,17 @@ There are four forms of data binding
 ###  1. What is  one way and two way data binding?
 In one-way binding, any changes in the component class will directly reflect inside the HTML template but, vice-versa is not possible. Whereas, it is possible in two-way binding
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ###  1. What is  directives?
 A directive is a class in Angular that is declared with a @Directive decorator.\
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ###  1. What is  templates?
 A template is a HTML view where you can display data by binding controls to properties of an Angular component.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ###### When to use a directive?
 Consider an application, where multiple components need to have similar functionalities. The norm thing to do is by adding this functionality individually to every component but, this task is tedious to perform. In such a situation, one can create a directive having the required functionality and then, import the directive to components which require this functionality.
@@ -140,6 +147,7 @@ Examples are *ngClass ,*ngStye
 1. **Attribute directives** 
 These are directives with a template.
 
+**[⬆ Back to Top](#table-of-contents)**
 
 ### 1. What are different types of compilation in Angular?
 Every Angular application consists of components and templates which the browser cannot understand. Therefore, all the Angular applications need to be compiled first before running inside the browser. For example, In AOT compilation, both Angular HTML and TypeScript code converted into efficient JavaScript code during the build phase before browser runs it.
@@ -154,10 +162,24 @@ The CLI command for aot compilation is -ng build --aot ng server –aot
 
 **AOT** is more suitable for the production environment whereas **JIT** is much suited for local development.
 
+**[⬆ Back to Top](#table-of-contents)**
 
 ###  1. What is  service?
 A service is used when a common functionality needs to be provided to various modules.\
 The main objective of a service is to share data, functions with different components of an Angular application.\
 A service is defined using a @Injectable decorator. A function defined inside a service can be invoked from any component or directive.
 
+**[⬆ Back to Top](#table-of-contents)**
 
+
+###  1. What is  pipes?
+**Pipes** - The pipes are used to transform data into desired format
+```html
+{{ birthday | date }}
+```
+**Parameterized pipe** - The parameterized pipe can be created by declaring the pipe name with a colon ( : ) and then the parameter value.
+```html
+{{ birthday | date:'dd/MM/yyyy'}}
+```
+
+**[⬆ Back to Top](#table-of-contents)**
