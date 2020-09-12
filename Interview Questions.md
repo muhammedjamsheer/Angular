@@ -22,6 +22,7 @@
 |17 | [What is RxJS.?](#What-is-ViewEncapsulation)|
 |18 | [What is Angular Router.?](#What-is-ViewEncapsulation)|
 |19 | [What is Reactive Form.?](#What-is-ViewEncapsulation)|
+|20 | [What is HostBinding && HostListner.?](#What-is-ViewEncapsulation)|
 
 
 
@@ -252,3 +253,7 @@ Find some Angular classes that are used in creating reactive form.\
 The FormGroup methods setValue and patchValue both sets the value in form controls of FormGroup.\
 The setValue sets the value in each and every form control of FormGroup. We cannot omit any form control in setValue\
 but when we want to assign only few form controls of FormGroup then we need to use patchValue.
+
+### 1.What is HostBinding && HostListner
+**@HostBinding**: This decorator binds a class property to a property of the host element.
+**@HostListener**: This decorator binds a class method to an event of the host element.
