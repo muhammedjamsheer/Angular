@@ -242,13 +242,13 @@ Angular Router is a mechanism in which navigation happens from one view to the n
 
 ###  1.What is Reactive form?
 
-Find some Angular classes that are used in creating reactive form.
+Find some Angular classes that are used in creating reactive form.\
 **FormControl**: Tracks the value and validation state of a form control.\
 **FormGroup**: Tracks the value and validity state of a group of FormControl.\
 **FormArray**: Tracks the value and validity state of array of FormControl, FormGroup and FormArray.\
-**FormBuilder**: Creates a big reactive form with minimum code in Angular. \
+**FormBuilder**: Creates a big reactive form with minimum code in Angular. 
 
 **Set and Patch Value**
-The FormGroup methods setValue and patchValue both sets the value in form controls of FormGroup.
-The setValue sets the value in each and every form control of FormGroup. We cannot omit any form control in setValue
+The FormGroup methods setValue and patchValue both sets the value in form controls of FormGroup.\
+The setValue sets the value in each and every form control of FormGroup. We cannot omit any form control in setValue\
 but when we want to assign only few form controls of FormGroup then we need to use patchValue.
