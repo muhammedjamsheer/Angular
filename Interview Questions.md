@@ -11,6 +11,7 @@
 |4 | [What is ViewEncapsulation?](#What-is-ViewEncapsulation)|
 |4 | [What is  data binding?](#What-is-ViewEncapsulation)|
 |4 | [What is  one way and two way data binding?](#What-is-ViewEncapsulation)|
+|4 | [What is  Directives?](#What-is-ViewEncapsulation)|
 
 
 
@@ -111,6 +112,25 @@ There are four forms of data binding
 
 ###  1. What is  one way and two way data binding?
 In one-way binding, any changes in the component class will directly reflect inside the HTML template but, vice-versa is not possible. Whereas, it is possible in two-way binding
+
+###  1. What is  directives?
+A directive is a class in Angular that is declared with a @Directive decorator.\
+
+###### When to use a directive?
+Consider an application, where multiple components need to have similar functionalities. The norm thing to do is by adding this functionality individually to every component but, this task is tedious to perform. In such a situation, one can create a directive having the required functionality and then, import the directive to components which require this functionality.
+
+There are three types of directives
+1. **Structural directives** 
+These directives change the DOM layout by adding and removing DOM elements.\
+Every structural directive has a ‘ * ’ sign before them.\
+Examples are *ngIf ,*ngFor ,*ngSwitch
+
+1. **Attribute directives** 
+These directives change the appearance or behavior of an element, component, or another directive.\
+Examples are *ngClass ,*ngStye 
+
+1. **Attribute directives** 
+These are directives with a template.
 
 
 
