@@ -20,6 +20,7 @@
 |15 | [What is metadata?](#What-is-ViewEncapsulation)|
 |16 | [What is the Difference between Promise and Observable in Angular.?](#What-is-ViewEncapsulation)|
 |16 | [What is RxJS.?](#What-is-ViewEncapsulation)|
+|16 | [What is Angular Router.?](#What-is-ViewEncapsulation)|
 
 
 
@@ -233,3 +234,6 @@ Observable is lazy in nature and does not return any value until we subscribe us
 
 ###  1.What is RxJS.?
 RxJS is Reactive Extensions for Javascript. It is a library that allows us to work with observables in an Angular application.
+
+###  1.What is Angular Router.?
+Angular Router is a mechanism in which navigation happens from one view to the next
