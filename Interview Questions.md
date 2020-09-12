@@ -36,10 +36,12 @@ Angular is one of the best frameworks for developing any Single Page Application
 
 
 ###  1. What are lifecycle hooks available?
+1. **constructor:** constructor is called when a component or directive is created by calling new on the class.
 1. **ngOnChanges:** This event executes every time, when the value of an input control within the component has been changed.
 1. **ngOnInit:** This event executed at the time of Component initialization. This event is called only once, just after the ngOnChanges() events.
-1.
-
+1. **ngDoCheck:** This event is executed every time when the input properties of a component are checked.
+1. **ngAfterViewInit:** TThis life cycle method executes when the component completes the rendering of its view full.
+1. **ngOnDestroy:** This method will be executed when we want to destroy the Angular components.  This method is very useful for unsubscribing the observables and detaching the     event handlers to avoid memory leaks..
 
 **[⬆ Back to Top](#table-of-contents)**
 
