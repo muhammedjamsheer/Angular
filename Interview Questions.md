@@ -85,11 +85,14 @@ Data binding is a concept in Angular and allows to define communication between 
 There are four forms of data binding
 
 1. **From the Component to the DOM:**  
-     – String interpolation uses the double curly braces {{ }} to display data from the component
+     ##### Interpolation
+       String interpolation uses the double curly braces {{ }} to display data from the component
+     ##### Property binding:
+       String interpolation uses the double curly braces {{ }} to display data from the component
 1. **From the DOM to the Component** 
-– Styles used in other HTML doesn’t spread to the component
+     – Styles used in other HTML doesn’t spread to the component
 1. **Two-way binding** 
-– Styles defined in a component are visible to all components of the application
+     – Styles defined in a component are visible to all components of the application
 
 **[⬆ Back to Top](#table-of-contents)**
 
