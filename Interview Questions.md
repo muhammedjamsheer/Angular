@@ -94,15 +94,5 @@ There are four forms of data binding
         ```html
         <input type="email" [value]="user.email">
         ```
-    2. **From the DOM to the Component:**
-        **Event binding: (event)=”function”:** When a specific DOM event happens (eg.: click, change, keyup), call the specified method in the component
-        ```html
-        <button (click)="logout()"></button>
-        ```
-    3. **Two-way binding:**
-        **Two-way data binding:** [(ngModel)]=”value”: Two-way data binding allows to have the data flow both ways. For example, in the below code snippet, both the email DOM            input and component email property are in sync
-        ```html
-        <input type="email" [(ngModel)]="user.email">
 
-        ```
 
