@@ -4,6 +4,7 @@
 |---- | ---------
 |1 | [What is Angular Framework?](#what-is-angular-framework)|
 |2 | [Why we use angular?](#Why-we-use-angular)|
+|2 | [what  is SPA ?](#Why-we-use-angular)|
 |3 | [What is Angular Component?](#What-is-Angular-Component)|
 |4 | [What are lifecycle hooks available?](#What-are-lifecycle-hooks-available)|
 |5 | [What is the difference between constructor and ngOnInit?](#what-is-the-difference-between-constructor-and-ngoninit)|
@@ -44,6 +45,10 @@ Angular is one of the best frameworks for developing any Single Page Application
 1. Support for both mobile and web
 
 **[⬆ Back to Top](#table-of-contents)**
+
+###  1. What is Single Page Applications?
+single Page Applications (SPAs) are web applications that use only one HTML page. \
+As the user interacts with the page, new content is dynamically updated on that master page
 
 ###  1. What is Angular Component?
 * In Angular, components are the basic building blocks, which control a part of the UI for any application.
@@ -210,6 +215,10 @@ A service is defined using a @Injectable decorator. A function defined inside a 
 
 ###  1. What is  Metadata?
 Metadata is used to decorate a class so that it can configure the expected behavior of the class.\
+1. **Class decorators**  eg:- @Component and @NgModule.
+1. **Property decorators** Used for properties inside classes, eg:- @Input and @Output
+1. **Method decorators**  Used for methods inside classes,  eg:- @HostListener
+1. **Parameter decorators** Used for parameters inside class constructors, e.g. @Inject, Optional
 
 ###  1.What is the Difference between Promise and Observable in Angular.?
 
