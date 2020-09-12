@@ -85,7 +85,7 @@ Data binding is a concept in Angular and allows to define communication between 
 There are four forms of data binding
 
 12. ### What is a data binding?
-Data binding is a core concept in Angular and allows to define communication between a component and the DOM, 
+Data binding is a core concept in Angular and allows to define communication between a component and the DOM .\
 There are four forms of data binding(divided as 3 categories) which differ in the way the data is flowing.
 
 1.**From the Component to the DOM:**
