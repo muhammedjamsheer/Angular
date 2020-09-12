@@ -35,10 +35,13 @@ Angular is one of the best frameworks for developing any Single Page Application
 1. Angular is supported by google ,thus making the platform user-friendly
 1. Typescript used in angular is a product of microsoft ,typescript  helps make our code easier to read and avoid errors
 1. Angular is based on modular approch.The modules consits of components, directives, pipes, or services.Modules make application functionality organization easy and reusable      and  Modules also allow for lazy loading,
+1. Component-based architecture offering Reusability, Maintainability
 1. Declarative UI - Angular uses HTML to render the UI of an application. HTML isa declarative language and is much easier to use than JavaScript.
 1. Support for two-way data-binding
 1. Supports dependency injection, RESTful services, and validations
 1. Command Line Interface (CLI) –The Angular CLI is a command-line interface tool that you use to initialize, develop, and maintain Angular applications directly from a command      shell.by This way, development and testing processes both become faster.
+1. RxJS for efficient, asynchronous programming
+1. Support for both mobile and web
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -196,6 +199,11 @@ A service is defined using a @Injectable decorator. A function defined inside a 
 **Async pipe** - The AsyncPipe subscribes to an observable or promise and returns the latest value it has emitted.
 ```html
 {{ time | async }}
+```
+
+**Chaining pipe** - To perform the multiple operations within the single expression the chaining Pipe is used.
+```html
+{{ birthday | date | uppercase}}
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
