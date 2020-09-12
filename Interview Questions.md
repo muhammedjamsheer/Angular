@@ -7,6 +7,8 @@
 |3 | [What is Angular Component?](#What-is-Angular-Component)|
 |3 | [What are lifecycle hooks available?](#What-are-lifecycle-hooks-available)|
 |4 | [What is the difference between constructor and ngOnInit?](#what-is-the-difference-between-constructor-and-ngoninit)|
+|4 | [What is ViewEncapsulation?](#What-is-ViewEncapsulation)|
+
 
 
 
@@ -51,6 +53,15 @@ Angular is one of the best frameworks for developing any Single Page Application
 * ngOnInit is a life cycle hook method in  Angular, especially used to define Angular bindings.
 * The constructor getting called first before ngOnInit method. 
 
+
+###  1. What is ViewEncapsulation?
+ViewEncapsulation determines whether the styles defined in a particular component will affect the entire application or not.
+Angular supports 3 types of ViewEncapsulation:
+1. **Emulated**  – Styles used in other HTML spread to the component
+1. **Native** – Styles used in other HTML doesn’t spread to the component
+1. **None** – Styles defined in a component are visible to all components of the application
+
+**[⬆ Back to Top](#table-of-contents)**
 
 
 
