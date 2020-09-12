@@ -7,6 +7,7 @@
 |3 | [What is Angular Component?](#What-is-Angular-Component)|
 |3 | [What are lifecycle hooks available?](#What-are-lifecycle-hooks-available)|
 |4 | [What is the difference between constructor and ngOnInit?](#what-is-the-difference-between-constructor-and-ngoninit)|
+|4 | [What is Modules?](#What-is-Modules)|
 |4 | [What is ViewEncapsulation?](#What-is-ViewEncapsulation)|
 
 
@@ -64,7 +65,18 @@ Angular supports 3 types of ViewEncapsulation:
 **[⬆ Back to Top](#table-of-contents)**
 
 
+###  1. What is Modules?
+A module is a place where we can group components, directives, services, and pipes.
+module is defined with a @NgModule decorator.
 
+By default, modules are of two types:
+* Root Module
+* Feature Module
+
+Every application can have only one root module whereas, it can have one or more feature modules.
+A root module imports BrowserModule, whereas a feature module imports CommonModule.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 
 
