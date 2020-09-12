@@ -15,8 +15,9 @@ Angular is one of the best frameworks for developing any Single Page Application
 
 
 2. ### Why we use angular?
-1 .Angular is supported by google.
-1 .Typescript used in angular is a product of microsoft ,typescript  helps make our code easier to read and avoid errors
+1. Angular is supported by google
+1. Typescript used in angular is a product of microsoft ,typescript  helps make our code easier to read and avoid errors
+1. Item 3
 
 **[⬆ Back to Top](#table-of-contents)**
 
