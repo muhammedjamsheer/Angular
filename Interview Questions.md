@@ -10,6 +10,7 @@
 |4 | [What is Modules?](#What-is-Modules)|
 |4 | [What is ViewEncapsulation?](#What-is-ViewEncapsulation)|
 |4 | [What is  data binding?](#What-is-ViewEncapsulation)|
+|4 | [What is  one way and two way data binding?](#What-is-ViewEncapsulation)|
 
 
 
@@ -111,4 +112,9 @@ There are four forms of data binding(divided as 3 categories) which differ in th
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+###  1. What is  one way and two way data binding?
+In one-way binding, any changes in the component class will directly reflect inside the HTML template but, vice-versa is not possible. Whereas, it is possible in two-way binding
+
+
 
