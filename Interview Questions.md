@@ -255,5 +255,5 @@ The setValue sets the value in each and every form control of FormGroup. We cann
 but when we want to assign only few form controls of FormGroup then we need to use patchValue.
 
 ### 1.What is HostBinding && HostListner
-**@HostBinding**: This decorator binds a class property to a property of the host element.
+**@HostBinding**: This decorator binds a class property to a property of the host element.\
 **@HostListener**: This decorator binds a class method to an event of the host element.
