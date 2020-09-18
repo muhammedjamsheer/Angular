@@ -48,6 +48,7 @@ Angular is one of the best frameworks for developing any Single Page Application
 1. Command Line Interface (CLI) –The Angular CLI is a command-line interface tool that you use to initialize, develop, and maintain Angular applications directly from a command      shell.by This way, development and testing processes both become faster.
 1. RxJS for efficient, asynchronous programming
 1. Support for both mobile and web
+1. Lazy Loading-it helps us to download the web pages in chunks instead of downloading everything in a big bundle.
 
 **[⬆ Back to Top](#table-of-contents)**
 
