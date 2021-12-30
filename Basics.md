@@ -1,5 +1,15 @@
 
-### What is Angular? 
+### Table of Contents
+
+| No. | Questions |
+|---- | ---------
+|1 | [What is Angular Framework?](#what-is-angular-framework)|
+|2 | [What is the difference between AngularJS and Angular?](#what-is-the-difference-between-angularjs-and-angular)|
+|3 | [What is TypeScript?](#what-is-typescript)|
+|4 | [Write a pictorial diagram of Angular architecture?](#write-a-pictorial-diagram-of-angular-architecture)|
+
+
+### what is angular framework? 
 
 * Angular is basically is an open-source, JavaScript-based client-side framework that helps us to develop a web-based application
 * Angular is one of the best frameworks for developing any Single Page Application
