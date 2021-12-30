@@ -4,7 +4,7 @@
 | No. | Questions |
 |---- | ---------
 |1 | [What is Angular Framework?](#what-is-angular-framework)|
-|2 | [Why we use Angular ?](#Why-we-use-Angular )|
+|2 | [Why we use Angular ?](#why-we-use-angular )|
 
 
 
