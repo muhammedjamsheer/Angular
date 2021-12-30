@@ -71,6 +71,21 @@ In one-way binding, any changes in the component will directly reflect inside th
 1. __Property binding__ - Property binding uses the square brackets [ ] syntax. In Property binding we can bind data from component class to the the DOM properties of an HTML element.
 1. __Event Binding__ it works with the event activities of the UI elements like click-event, blur-event.Here data is passing from html template to component class
 
-   
+   28. ### What are pipes?
+    A pipe takes in data as input and transforms it to a desired output. For example, let us take a pipe to transform a component's birthday property into a human-friendly date using **date** pipe.
+
+    ```javascript
+    import { Component } from '@angular/core';
+
+    @Component({
+      selector: 'app-birthday',
+      template: `<p>Birthday is {{ birthday | date }}</p>`
+    })
+    export class BirthdayComponent {
+      birthday = new Date(1987, 6, 18); // June 18, 1987
+    }
+    ```
+
+  **[⬆ Back to Top](#table-of-contents)**
         
     
