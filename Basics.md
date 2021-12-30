@@ -13,7 +13,7 @@
 * Angular is basically is an open-source, JavaScript-based client-side framework that helps us to develop a web-based application
 * Angular is one of the best frameworks for developing any Single Page Application
 
-### Why we use Angular ?
+### why we use angular ?
 * Angular is supported by google (saftey and updated)
 * Typescript used in angular is a product of microsoft. So both are  open source and freely available
 * Angular is based on modular approch.
