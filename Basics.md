@@ -107,16 +107,17 @@ Two-way data binding = property binding + event binding.
 })
 export class AppComponent {
   title="Angular Binding Example"
-  isDisabled= true;
+  isDisabled:boolean== true;
   clickCount=0
   status:string='error';
+  cssStringVar: string= 'red size20';
+  hasError:boolean=false
   clickMe() {
      this.clickCount++;
   }
   getColor() {
     return 'yellow';
   }
- 
 }
  ```
  
@@ -125,10 +126,31 @@ export class AppComponent {
 <h2>{{title}}</h2>
 
 Property Binding
-----------------
+--------------------------------------------------------------------------------------------
 <button [disabled]="isDisabled">I am disabled</button>
 
+Class Binding in Angular
+------------------------
+The Angular Class binding is used to add or remove css classes to and from the HTML elements
+The Angular provides the three ways to add/remove classes to and from the element. One using the DOM ClassName Property. The second option is to use the Class shorthand. The third option is to use the NgClass directive,
+
+1.Class binding with ClassName
+ <div [className]="'red'">Test</div>
+ <div [className]="'red size20'">Test</div>
+
+Conditionally apply Classes
+<div [className]="cssStringVar">Test</div>
+<div [className]="getClass()">getClass</div>
+<div [className]="hasError() ? 'red' : 'size20'"> conditonal operator </div>
+
+2.Class binding with Class
+<div [class.<className>]="condition"></div>
+className is name of the class, which you want to bind to.
+condition must return true or false. A return value of true adds the class and a false removes the class.
+<div [class.red]="hasError" [class.size20]="hasError">Test</div>
+
 Style binding in Angular
+------------------------
 Syntax -> [style.style-property] = "style-value"
 
 <p [style.color]="'red'">Give me red</p>
@@ -145,7 +167,7 @@ Setting Multiple styles
    paragraph with multiple styles </p>
 
 Event Binding
--------------
+------------------------------------------------------------------------------------------------
 <button (click)="clickMe()">Save</button>
 
 Instead of parentheses, you can also use the on- syntax as shown below.
