@@ -60,27 +60,18 @@
 
 #### There are several ways we can specify the Component selector
  1. Using element name
-   ```javascript
-     @Component({ selector: 'app-element'})
-
+ ```javascript
+    @Component({ selector: 'app-element'})
     <app-element></app-element>
- 
-    
+
 2. Using the CSS class name
- 
-      @Component({selector: '.app-root'})
+     @Component({selector: '.app-root'})
     <div class="app-root"></div>
  
-    
  3. Using attribute name
-
      @Component({ selector: '[app-root]'})
-
-    
-    
- 
     <div app-root></div>
-    ```
+ ```
 
 
 
