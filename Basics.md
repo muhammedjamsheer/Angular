@@ -62,9 +62,7 @@
  1. Using element name
    ```javascript
      @Component({ selector: 'app-element'})
-    ```
-    
-    ```html
+
     <app-element></app-element>
     ```
     
