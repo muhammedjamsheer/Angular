@@ -42,7 +42,7 @@
 1. angular.json – angular.json file is an Angular Application Environment based JSON file which contains all the information related to the project build and deployment. It tells the system which files need to change when we use ng build or ng serve command. 
 
 ### Angular Components
-* components are the basic building blocks, which control a part of the UI for any application.
+* Components are the basic building blocks, which control a part of the UI for any application.
 * The Component contains the data & user interaction logic that defines how the View looks and behaves. 
 * A component is defined using the @Component decorator.
 * Every component consists of three parts,
@@ -51,12 +51,23 @@
    *  Metadata Provides additional information about the component to the Angular. Angular uses this information to process the class. We use the @Component decorator to       provide the Metadata to the Component.
  
 #### Important Component metadata properties
-1. selector – A component can be used by the selector expression.
+1. selector – It is used to render the components view in the DOM inside the CSS selector,.
 2. template- In this property, we can pass the HTML tags or code directly as inline code. 
 3. templayeUrl  - This property always accepts the HTML file name with its related file path.
 4. styles / stylesUrls - To provide an inline style, we need to use styles, and to provide an external file path or URL, we need to use styleUrls.
 5. providers – it is an array and it is used to inject different types of custom services within the component
 6. Directives - The directives that this component going to use are listed here.
+
+#### There are several ways we can specify the Component selector
+1. Using the CSS class name
+   ```javascript
+      @Component({     
+        selector: '.app-root' 
+      })
+     
+<div class="app-root"></div>
+    ```
+
 
 
 
