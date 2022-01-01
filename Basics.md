@@ -60,7 +60,7 @@
 
 #### There are several ways we can specify the Component selector
 1. Using the CSS class name
-   ```javascript
+   ```html
       @Component({     
         selector: '.app-root' 
       })
