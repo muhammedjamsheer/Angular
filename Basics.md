@@ -124,6 +124,20 @@ export class AppComponent {
 Event Binding
 -------------
 <button (click)="clickMe()">Save</button>
+
+Instead of parentheses, you can also use the on- syntax as shown below.
+<button on-click="clickMe()">Click Me</button>
+
+We can also bind an unlimited number of event handlers on the same event by separating them with a semicolon ;
+<button (click)="clickMe() ; clickCount1=clickCount">Click Me</button>
+
+DOM Events carries  the information about the event.
+<input (input)="handleInput($event)">
+
+We can also make use of the template reference variable to pass the value instead of $event.
+<input #el (input)="handleInput(el)">
+
+
   ```
  
  
