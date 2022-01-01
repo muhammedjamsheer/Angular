@@ -63,6 +63,7 @@
    ```javascript
      @Component({ selector: 'app-element'})
     ```
+    
     ```html
     <app-element></app-element>
     ```
@@ -71,6 +72,8 @@
    ```javascript
       @Component({selector: '.app-root'})
     ```
+    
+    
     ```html
     <div class="app-root"></div>
     ```
@@ -79,6 +82,8 @@
    ```javascript
      @Component({ selector: '[app-root]'})
     ```
+    
+    
     ```html
     <div app-root></div>
     ```
