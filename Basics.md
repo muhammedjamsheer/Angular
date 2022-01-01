@@ -93,10 +93,32 @@ examples of one way data bindings are
 3. __Event Binding__ Data flows from the DOM to the component.When a DOM event occurs such as click etc.
 
 
-
  In  __Two way data binding__ Data flows both ways ie, changes made in the HTML template is automatically reflect in the component class and vice versa.
 The Angular uses the ngModel directive to achieve the two-way binding.
 Two-way data binding = property binding + event binding.
+
+ ```javascript
+ import { Component } from '@angular/core';
+ 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title="Angular Binding Example"
+  isDisabled= true;
+ 
+}
+ ```
+ 
+ 
+ 
+ ```html
+ sssssssss
+  ```
+ 
+ 
 
         
     
