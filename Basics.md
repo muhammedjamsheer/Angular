@@ -59,17 +59,18 @@
 6. Directives - The directives that this component going to use are listed here.
 
 #### There are several ways we can specify the Component selector
- 1. Using element name
+
  ```javascript
+1. Using element name
     @Component({ selector: 'app-element'})
     <app-element></app-element>
 
 2. Using the CSS class name
-     @Component({selector: '.app-root'})
+    @Component({selector: '.app-root'})
     <div class="app-root"></div>
  
- 3. Using attribute name
-     @Component({ selector: '[app-root]'})
+3. Using attribute name
+    @Component({ selector: '[app-root]'})
     <div app-root></div>
  ```
 
