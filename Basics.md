@@ -69,20 +69,20 @@
 2. Using the CSS class name
    ```javascript
       @Component({selector: '.app-root'})
-    ```
+
     
     
-    ```html
+
     <div class="app-root"></div>
-    ```
+ 
     
  3. Using attribute name
-   ```javascript
+
      @Component({ selector: '[app-root]'})
-    ```
+
     
     
-    ```html
+ 
     <div app-root></div>
     ```
 
