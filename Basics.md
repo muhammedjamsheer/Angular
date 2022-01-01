@@ -83,12 +83,18 @@
 
 
 ### Data Bindings in Angular
+The data binding in Angular can be broadly classified into two groups. One way binding or two-way binding
+ __One way data binding__
+In one way binding data flows from one direction. Either from view to component or from component to view
+examples of one way data bindings are
+1. __Interpolation__    - Interpolation uses the double curly braces expression {{}} to display  data from the component class to the template. 
+2. __Property Binding__ - In Property binding we can bind data from component class to the the DOM properties of an HTML element.Property binding uses the square brackets [ ] syntax.
+3. __Event Binding__ Data flows from the DOM to the component.When a DOM event occurs such as click etc
 
-In one-way binding, any changes in the component will directly reflect inside the HTML template but, vice-versa is not possible. Whereas, it is possible in two-way binding
-1. __Interpolation__  - Interpolation uses the braces expression {{}} to display  data from the component class to the template. 
-1. __Property binding__ - Property binding uses the square brackets [ ] syntax. In Property binding we can bind data from component class to the the DOM properties of an HTML element.
-1. __Event Binding__ it works with the event activities of the UI elements like click-event, blur-event.Here data is passing from html template to component class
-
+ __Two way data binding__
+ In two  way binding Data flows both ways ie, changes made in the HTML template is automatically reflect in the component class and vice versa
+The Angular uses the ngModel directive to achieve the two-way binding.
+Two-way data binding = property binding + event binding.
 
         
     
