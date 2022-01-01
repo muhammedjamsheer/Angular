@@ -47,38 +47,18 @@
 * A component is defined using the @Component decorator.
 * Every component consists of three parts,
    *  Template which loads the view for the component. There are two ways you can specify the Template in Angular. ie,Inline Template and External Template
-   *  The Class provides the data & logic to the View. It contains the JavaScript code associated with Template.
+   *  The Class provides the data & logic to the View. It contains Properties & Methods associated with Template.
    *  Metadata Provides additional information about the component to the Angular. Angular uses this information to process the class. We use the @Component decorator to       provide the Metadata to the Component.
-
-
-
-
-
-
+ 
 #### Important Component metadata properties
-1.Selector
-2.Providers-it is used to inject different types of custom services within the component.
-3.Styles/styleUrls  - To provide an inline style, we need to use styles, and to provide an external file path or URL, we need to use styleUrls.
-4.template/templateUrl
- template     - In this property, we can pass the HTML tags or code directly as inline code. 
- templayeUrl  - This property always accepts the HTML file name with its related file path.
-
-
-   
-#### @Component Metadata
 1. selector – A component can be used by the selector expression.
-1. template- In this property, we can pass the HTML tags or code directly as inline code. 
-1. templayeUrl  - This property always accepts the HTML file name with its related file path.
-1. styles / stylesUrls - To provide an inline style, we need to use styles, and to provide an external file path or URL, we need to use styleUrls.
-1. providers – it is an array and it is used to inject different types of custom services within the component
+2. template- In this property, we can pass the HTML tags or code directly as inline code. 
+3. templayeUrl  - This property always accepts the HTML file name with its related file path.
+4. styles / stylesUrls - To provide an inline style, we need to use styles, and to provide an external file path or URL, we need to use styleUrls.
+5. providers – it is an array and it is used to inject different types of custom services within the component
+6. Directives - The directives that this component going to use are listed here.
 
-#### Life Cycle of a Component
-1. __constructor__ -constructor is called when a component or directive is created by calling new on the class. It is mostly used  to set up Dependency Injection, Initialization of class fields, etc.
-1. __ngOnChanges__ - This event executes every time, a value of an input control within the component has been changed. This event activates first when the value of a bound        property has been changed.
-1. __ngOnInit__ – This event executed at the time of Component initialization. This event is called only once, just after the ngOnChanges() events. This event is mainly used to   initialize data in a component.
-1. __ngDoCheck__ – This event is executed every time when the input properties of a component are checked.
-1. __ngAfterViewInit__ – This life cycle method executes when the component completes the rendering of its view full.
-1. __ngOnDestroy__  - This method will be executed when we want to destroy the Angular components. This method is very useful for unsubscribing the observables and detaching the event handlers to avoid memory leaks.
+
 
 
 #### Data bindings in Angular
