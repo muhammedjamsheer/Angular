@@ -109,17 +109,39 @@ export class AppComponent {
   title="Angular Binding Example"
   isDisabled= true;
   clickCount=0
+  status:string='error';
   clickMe() {
      this.clickCount++;
   }
+  getColor() {
+    return 'yellow';
+  }
+ 
 }
  ```
  
  ```html
 <h1 [innerText]="title"></h1>
 <h2>{{title}}</h2>
+
+Property Binding
+----------------
 <button [disabled]="isDisabled">I am disabled</button>
 
+Style binding in Angular
+Syntax -> [style.style-property] = "style-value"
+
+<p [style.color]="'red'">Give me red</p>
+<p [style.background-color]="'grey'">some paragraph with grey background</p>
+<button [style.border]="'5px solid yellow'">Save</button>
+<button [style.font-size.px]="'20'" >Big Button</button>
+
+Conditionally setting the styles
+<button [style.color]="status=='error' ? 'red': 'blue'">Button 1</button>
+<button [style.color]="getColor()">Button 2</button> 
+
+Setting Multiple styles
+<p [style.color]="getColor()" [style.font-size.px]="'20'"   [style.background-color]="status=='error' ? 'red': 'blue'"> paragraph with multiple styles </p>
 
 Event Binding
 -------------
