@@ -132,7 +132,8 @@ Property Binding
 Class Binding in Angular
 ------------------------
 The Angular Class binding is used to add or remove css classes to and from the HTML elements
-The Angular provides the three ways to add/remove classes to and from the element. One using the DOM ClassName Property. The second option is to use the Class shorthand. The third option is to use the NgClass directive,
+The Angular provides the three ways to add/remove classes to and from the element. One using the DOM ClassName Property.
+The second option is to use the Class shorthand. The third option is to use the NgClass directive,
 
 1.Class binding with ClassName
  <div [className]="'red'">Test</div>
