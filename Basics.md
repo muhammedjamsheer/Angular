@@ -5,7 +5,7 @@
 |---- | ---------
 |1 | [What is Angular Framework?](#what-is-angular-framework)|
 |2 | [Why we use Angular ?](#why-we-use-angular )|
-|3 | [Angular Components?](#Angular-Components )|
+|3 | [Angular Components?](#3-Angular-Components )|
 
 
 
