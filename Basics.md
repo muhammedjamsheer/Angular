@@ -108,14 +108,18 @@ Two-way data binding = property binding + event binding.
 export class AppComponent {
   title="Angular Binding Example"
   isDisabled= true;
- 
+  clickCount=0
+  clickMe() {
+     this.clickCount++;
+  }
 }
  ```
  
- 
- 
  ```html
- sssssssss
+<h1 [innerText]="title"></h1>
+<h2>{{title}}</h2>
+<button [disabled]="isDisabled">I am disabled</button>
+<button (click)="clickMe()">Save</button>
   ```
  
  
