@@ -97,6 +97,54 @@ examples of one way data bindings are
 The Angular uses the ngModel directive to achieve the two-way binding.
 Two-way data binding = property binding + event binding.
 
+__Interpolation__ 
+```javascript
+ import { Component } from '@angular/core';
+ 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+title = 'Angular Interpolation Example';
+getTitle(): string {
+     return this.title;
+ }
+ max(first: number, second: number): number {
+  return Math.max(first, second);
+ }
+}
+ ```
+ 
+ ```html
+1.Invoke a method in the component
+{{getTitle()}}
+
+2.Concatenate two string
+<p>Welcome to {{title}}</p>
+<p>Welcome {{firstName}}, {{lastName}}</p>
+<p>Welcome {{getFirstName()}}, {{getLastName()}}</p>
+
+3.Perform some mathematical operations
+<p>100x80 = {{100*80}}</p>
+<p>Largest: {{max(100, 200)}}</p>
+
+4.Bind to an element property
+ <p>Show me <span class = "{{giveMeRed}}">red</span></p>
+ <p style.color={{giveMeRed}}>This is red</p>
+ <img src="{{itemImageUrl}}">
+ <a href="/product/{{productID}}">{{productName}}</a>
+
+5.Use a template reference variable
+ <label>Enter Your Name</label>
+ <input (keyup)="0" #name>
+ <p>Welcome {{name.value}} </p>
+
+  ```
+  
+   __Property Binding__
+
  ```javascript
  import { Component } from '@angular/core';
  
