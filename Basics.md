@@ -156,13 +156,9 @@ getTitle(): string {
 export class AppComponent {
   title="Angular Binding Example"
   isDisabled:boolean== true;
-  clickCount=0
   status:string='error';
   cssStringVar: string= 'red size20';
   hasError:boolean=false
-  clickMe() {
-     this.clickCount++;
-  }
   getColor() {
     return 'yellow';
   }
@@ -170,11 +166,7 @@ export class AppComponent {
  ```
  
  ```html
-<h1 [innerText]="title"></h1>
-<h2>{{title}}</h2>
 
-Property Binding
---------------------------------------------------------------------------------------------
 <button [disabled]="isDisabled">I am disabled</button>
 
 Class Binding in Angular
@@ -215,8 +207,26 @@ Setting Multiple styles
 <p [style.color]="getColor()" [style.font-size.px]="'20'"   [style.background-color]="status=='error' ? 'red': 'blue'">
    paragraph with multiple styles </p>
 
-Event Binding
-------------------------------------------------------------------------------------------------
+  ```
+   __Event Binding__
+
+ ```javascript
+ import { Component } from '@angular/core';
+ 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  clickCount=0
+  clickMe() {
+     this.clickCount++;
+  }
+}
+ ```
+ 
+ ```html
 <button (click)="clickMe()">Save</button>
 
 Instead of parentheses, you can also use the on- syntax as shown below.
@@ -230,7 +240,6 @@ DOM Events carries  the information about the event.
 
 We can also make use of the template reference variable to pass the value instead of $event.
 <input #el (input)="handleInput(el)">
-
 
   ```
  
