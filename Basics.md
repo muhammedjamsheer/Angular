@@ -5,6 +5,7 @@
 |---- | ---------
 |1 | [What is Angular Framework?](#what-is-angular-framework)|
 |2 | [Why we use Angular ?](#why-we-use-angular )|
+|3 | [Angular Components?](#angular-components )|
 
 
 
@@ -40,13 +41,16 @@
 1. package.json-it is basically a JSON file that contains all information related to the required packages for the project.
 1. angular.json – angular.json file is an Angular Application Environment based JSON file which contains all the information related to the project build and deployment. It tells the system which files need to change when we use ng build or ng serve command. 
 
-### Components
+### angular components
 * components are the basic building blocks, which control a part of the UI for any application.
 * A component is defined using the @Component decorator.
 * Every component consists of three parts,
    *  Template which loads the view for the component, 
    *  class that  contains properties and methods that supports the view.
    *  metadata (defined using decorator).
+
+
+
    
 #### @Component Metadata
 1. selector – A component can be used by the selector expression.
