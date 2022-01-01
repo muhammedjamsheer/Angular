@@ -41,7 +41,7 @@
 1. package.json-it is basically a JSON file that contains all information related to the required packages for the project.
 1. angular.json – angular.json file is an Angular Application Environment based JSON file which contains all the information related to the project build and deployment. It tells the system which files need to change when we use ng build or ng serve command. 
 
-### Angular Components
+### 3.Angular Components
 * Components are the basic building blocks, which control a part of the UI for any application.
 * The Component contains the data & user interaction logic that defines how the View looks and behaves. 
 * A component is defined using the @Component decorator.
