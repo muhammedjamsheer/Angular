@@ -141,7 +141,8 @@ Conditionally setting the styles
 <button [style.color]="getColor()">Button 2</button> 
 
 Setting Multiple styles
-<p [style.color]="getColor()" [style.font-size.px]="'20'"   [style.background-color]="status=='error' ? 'red': 'blue'"> paragraph with multiple styles </p>
+<p [style.color]="getColor()" [style.font-size.px]="'20'"   [style.background-color]="status=='error' ? 'red': 'blue'">
+   paragraph with multiple styles </p>
 
 Event Binding
 -------------
