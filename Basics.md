@@ -48,12 +48,18 @@
 * Every component consists of three parts,
    *  Template which loads the view for the component. There are two ways you can specify the Template in Angular. ie,Inline Template and External Template
    *  The Class provides the data & logic to the View. It contains the JavaScript code associated with Template.
-   *  Metadata Provides additional information about the component to the Angular. Angular uses this information to process the class. We use the @Component decorator to       provide the Metadata to the Component..
-   Important Component metadata properties
-   1.Selector
-   2.Providers
-   3.Styles/styleUrls
-   4.template/templateUrl
+   *  Metadata Provides additional information about the component to the Angular. Angular uses this information to process the class. We use the @Component decorator to       provide the Metadata to the Component.
+
+
+
+
+
+
+#### Important Component metadata properties
+1.Selector
+2.Providers
+3.Styles/styleUrls
+4.template/templateUrl
 
 
    
