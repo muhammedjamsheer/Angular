@@ -64,15 +64,11 @@
      @Component({ selector: 'app-element'})
 
     <app-element></app-element>
-    ```
+ 
     
 2. Using the CSS class name
-   ```javascript
+ 
       @Component({selector: '.app-root'})
-
-    
-    
-
     <div class="app-root"></div>
  
     
