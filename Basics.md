@@ -90,7 +90,7 @@ In __One way data binding__ data flows from one direction. Either from view to c
 examples of one way data bindings are
 1. __Interpolation__    - Interpolation uses the double curly braces expression {{}} to display  data from the component class to the template. 
 2. __Property Binding__ - In Property binding we can bind data from component class to the the DOM properties of an HTML element.Property binding uses the square brackets [ ] syntax.
-3. __Event Binding__ Data flows from the DOM to the component.When a DOM event occurs such as click etc.
+3. __Event Binding__ Data flows from the DOM to the component.When a DOM event occurs such as click, hover etc.
 
 
  In  __Two way data binding__ Data flows both ways ie, changes made in the HTML template is automatically reflect in the component class and vice versa.
@@ -119,6 +119,10 @@ export class AppComponent {
 <h1 [innerText]="title"></h1>
 <h2>{{title}}</h2>
 <button [disabled]="isDisabled">I am disabled</button>
+
+
+Event Binding
+-------------
 <button (click)="clickMe()">Save</button>
   ```
  
