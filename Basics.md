@@ -50,7 +50,6 @@
    *  The Class provides the data & logic to the View. It contains the JavaScript code associated with Template.
    *  Metadata Provides additional information about the component to the Angular. Angular uses this information to process the class. We use the @Component decorator to       provide the Metadata to the Component..
    Important Component metadata properties
-   ---------------------------------------
    1.Selector
    2.Providers
    3.Styles/styleUrls
