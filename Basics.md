@@ -40,7 +40,10 @@
 #### Different Config Files   
 1. package.json-it is basically a JSON file that contains all information related to the required packages for the project.
 1. angular.json – angular.json file is an Angular Application Environment based JSON file which contains all the information related to the project build and deployment. It tells the system which files need to change when we use ng build or ng serve command. 
-r
+
+
+**[⬆ Back to Top](#table-of-contents)**
+  
 8. ### Angular Components
 * Components are the basic building blocks, which control a part of the UI for any application.
 * The Component contains the data & user interaction logic that defines how the View looks and behaves. 
@@ -74,6 +77,7 @@ r
     <div app-root></div>
  ```
 
+  **[⬆ Back to Top](#table-of-contents)**
 
 
 
@@ -99,6 +103,5 @@ In one-way binding, any changes in the component will directly reflect inside th
     }
     ```
 
-  **[⬆ Back to Top](#table-of-contents)**
         
     
