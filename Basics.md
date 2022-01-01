@@ -9,12 +9,12 @@
 
 
 
-### what is angular framework? 
+1.### what is angular framework? 
 
 * Angular is basically is an open-source, JavaScript-based client-side framework that helps us to develop a web-based application
 * Angular is one of the best frameworks for developing any Single Page Application
 
-### why we use angular?
+2.### why we use angular?
 * Angular is supported by google (saftey and updated)
 * Typescript used in angular is a product of microsoft. So both are  open source and freely available
 * Angular is based on modular approch.
@@ -41,7 +41,7 @@
 1. package.json-it is basically a JSON file that contains all information related to the required packages for the project.
 1. angular.json – angular.json file is an Angular Application Environment based JSON file which contains all the information related to the project build and deployment. It tells the system which files need to change when we use ng build or ng serve command. 
 
-### 3. Angular Components
+3.### Angular Components
 * Components are the basic building blocks, which control a part of the UI for any application.
 * The Component contains the data & user interaction logic that defines how the View looks and behaves. 
 * A component is defined using the @Component decorator.
