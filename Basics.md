@@ -5,7 +5,8 @@
 |---- | ---------
 |1 | [What is Angular Framework?](#what-is-angular-framework)|
 |2 | [Why we use Angular ?](#why-we-use-angular )|
-|3 | [Angular Components?](#Angular-Components )|
+|3 | [Angular Decorators](#Angular-Decorators )|
+|3 | [Angular Components](#Angular-Components )|
 |4 | [Data Bindings in Angular?](#Data-Bindings-in-Angular )|
 
 
@@ -41,6 +42,13 @@
 #### Different Config Files   
 1. package.json-it is basically a JSON file that contains all information related to the required packages for the project.
 1. angular.json – angular.json file is an Angular Application Environment based JSON file which contains all the information related to the project build and deployment. It tells the system which files need to change when we use ng build or ng serve command. 
+
+
+**[⬆ Back to Top](#table-of-contents)**
+  
+8. ### Angular Decorators
+* Components are the basic building blocks, which control a part of the UI for any application.
+
 
 
 **[⬆ Back to Top](#table-of-contents)**
