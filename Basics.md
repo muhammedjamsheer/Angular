@@ -47,20 +47,25 @@
 **[⬆ Back to Top](#table-of-contents)**
   
 8. ### Angular Decorators
-9. 
+  Decorators are design patterns used to isolate the modification or decoration of a class without modifying the source code.
 __1.Class Decorators__
 Class Decorators are the top-level decorators that are used to define the purpose for the classes. 
 They provide information to Angular that a particular class is a component, or module
 
-__@NgModule__ Decorator defines the class as Angular Module and adds the required metadata to it.
+__@NgModule Decorator__       
+It defines the class is an Angular Module and  provides metadata about the module.
 
-__@Component__ Decorator defines the class as an Angular Component only if we decorate it with the @Component Decorator.  
+__@Component Decorator__      
+It defines the class is an Angular Component and  provides metadata about the component.  
 
-__@Injectable__-sfaef.    
+__@Injectable Decorator___
+It Declares that a class has dependencies that should be injected into the constructor when the dependency injector is creating an instance of this class.       
 
-__@Directive__  Decorator defines the class as an Angular directive. The directives help us to change the appearance, behavior, or layout of a DOM element.
+__@Directive Decorator___   
+It defines the class as an Angular directive. The directives help us to change the appearance, behavior, or layout of a DOM element.
 
-__@Pipe__ Decorator defines the class as an  Angular Pipe and supplies configuration metadata.
+__@Pipe Decorator___     
+It defines the class as an  Angular Pipe  and provides metadata about the pipe.
 
 __2.Property Decorators__
 Property Decorators are applied to the properties of the class.
@@ -70,7 +75,7 @@ Input decorator marks the property as the input property. I.e it can receive dat
 The parent component uses the property binding to bind it to a component property. Whenever the value in the parent component changes angular updates the value in the child component. 
 
 __@Output__    
-Output decorates the property as the output property.      
+It Declares an output property that fires events that you can subscribe to with an event binding      
 We initialize it as an EventEmitter. The child component raises the event and passes the data as the argument to the event. The parent component listens to events using event binding and reads the data. 
 
 __@ContentChild & @ContentChildren__      
