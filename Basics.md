@@ -47,7 +47,9 @@
 **[⬆ Back to Top](#table-of-contents)**
   
 8. ### Angular Decorators
-  Decorators are design patterns used to isolate the modification or decoration of a class without modifying the source code.     
+  Decorators are design patterns used to isolate the modification or decoration of a class without modifying the source code. 
+  Decorators are the features of Typescript and are implemented as functions. The name of the decorator starts with @ symbol following by brackets and arguments.    
+  
 __1.Class Decorators__
 Class Decorators are the top-level decorators that are used to define the purpose for the classes. 
 They provide information to Angular that a particular class is a component, or module
@@ -96,15 +98,7 @@ The HostListener listens to host events. The host is an element on which we atta
 
 __4.Parameter Decorators__
 Parameter Decorators are applied to the constructor parameter of the class.
-
-__@HostListener__          
-The HostListener listens to host events. The host is an element on which we attach our component or directive. Using HostListener we can respond whenever the user performs some action on the host element. 
-
-
-
-
-
-
+@Inject  @Host @Self @SkipSelf
 
 
 **[⬆ Back to Top](#table-of-contents)**
