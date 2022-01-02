@@ -47,9 +47,12 @@
 **[⬆ Back to Top](#table-of-contents)**
   
 8. ### Angular Decorators
-* Components are the basic building blocks, which control a part of the UI for any application.
+__1.Class Decorators__
+Class Decorators are the top-level decorators that are used to define the purpose for the classes. 
+They provide information to Angular that a particular class is a component, or module
 
-
+@NgModule - Decorator defines the class as Angular Module and adds the required metadata to it.
+@Component -The Angular recognizes the class as Angular Component only if we decorate it with the @Component Decorator.
 
 **[⬆ Back to Top](#table-of-contents)**
   
