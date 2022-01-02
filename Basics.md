@@ -47,7 +47,7 @@
 **[⬆ Back to Top](#table-of-contents)**
   
 8. ### Angular Decorators
-  Decorators are design patterns used to isolate the modification or decoration of a class without modifying the source code.
+  Decorators are design patterns used to isolate the modification or decoration of a class without modifying the source code.     
 __1.Class Decorators__
 Class Decorators are the top-level decorators that are used to define the purpose for the classes. 
 They provide information to Angular that a particular class is a component, or module
