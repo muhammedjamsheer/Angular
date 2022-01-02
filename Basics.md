@@ -56,11 +56,10 @@
  
 #### Important Component metadata properties
 1. selector – It is used to render the components view in the DOM inside the CSS selector,.
-2. template- In this property, we can pass the HTML tags or code directly as inline code. 
-3. templayeUrl  - This property always accepts the HTML file name with its related file path.
-4. styles / stylesUrls - To provide an inline style, we need to use styles, and to provide an external file path or URL, we need to use styleUrls.
-5. providers – it is an array and it is used to inject different types of custom services within the component
-6. Directives - The directives that this component going to use are listed here.
+2. template /  templayeUrl - To provide an inline template, we need to use template (Here we write Html tags directly), and to provide an external file path or URL, we need to use templayeUrl (Here we write URL of an external file that contains a template for the view) . 
+3. styles / stylesUrls - To provide an inline style, we need to use styles, and to provide an external file path or URL, we need to use styleUrls. 
+4. providers – it is an array and it is used to inject different types of custom services within the component
+5. Directives - The directives that this component going to use are listed here.
 
 #### There are several ways we can specify the Component selector
 
