@@ -51,8 +51,14 @@ __1.Class Decorators__
 Class Decorators are the top-level decorators that are used to define the purpose for the classes. 
 They provide information to Angular that a particular class is a component, or module
 
-@NgModule - Decorator defines the class as Angular Module and adds the required metadata to it.
-@Component -The Angular recognizes the class as Angular Component only if we decorate it with the @Component Decorator.
+__@NgModule__ Decorator defines the class as Angular Module and adds the required metadata to it.  
+__@Component__ - Decorator defines the class as an Angular Component only if we decorate it with the @Component Decorator.
+__@Injectable__-sfaef
+__@Directive__  Decorator defines the class as an Angular directive. The directives help us to change the appearance, behavior, or layout of a DOM element.
+__@Pipe__ Decorator defines the class as an  Angular Pipe and supplies configuration metadata.
+
+
+Decorator marks a class as an Angular directive. The directives help us to change the appearance, behavior, or layout of a DOM element.
 
 **[⬆ Back to Top](#table-of-contents)**
   
