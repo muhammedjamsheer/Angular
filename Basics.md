@@ -65,17 +65,22 @@ __@Pipe__ Decorator defines the class as an  Angular Pipe and supplies configura
 __2.Property Decorators__
 Property Decorators are applied to the properties of the class.
 
-__@Input__ Input decorator marks the property as the input property. I.e it can receive data from the parent component.     
+__@Input__ 
+Input decorator marks the property as the input property. I.e it can receive data from the parent component.     
 The parent component uses the property binding to bind it to a component property. Whenever the value in the parent component changes angular updates the value in the child component. 
 
-__@Output__ Output decorates the property as the output property.      
+__@Output__ 
+Output decorates the property as the output property.      
 We initialize it as an EventEmitter. The child component raises the event and passes the data as the argument to the event. The parent component listens to events using event binding and reads the data. 
 
-__@ContentChild & @ContentChildren__ The ContentChild & ContentChildren are decorators, which we use to Query and get the reference to the Projected Content in the DOM. Projected content is the content that this component receives from a parent component.  
+__@ContentChild & @ContentChildren__ 
+The ContentChild & ContentChildren are decorators, which we use to Query and get the reference to the Projected Content in the DOM. Projected content is the content that this component receives from a parent component.  
 
-__@ViewChild & @ViewChildren__ The ViewChild or ViewChildren decorators are used to Query and get the reference of the DOM element in the Component. ViewChild returns the first matching element and ViewChildren returns all the matching elements as QueryList of items. We can use these references to manipulate element properties in the component. 
+__@ViewChild & @ViewChildren__ 
+The ViewChild or ViewChildren decorators are used to Query and get the reference of the DOM element in the Component. ViewChild returns the first matching element and ViewChildren returns all the matching elements as QueryList of items. We can use these references to manipulate element properties in the component. 
 
-__@HostBinding__ The HostBinding allows us to bind to a property of the host element. The host is an element on which we attach our component or directive. This feature allows us to manipulate the host styles.     
+__@HostBinding__ 
+The HostBinding allows us to bind to a property of the host element. The host is an element on which we attach our component or directive. This feature allows us to manipulate the host styles.     
 
 
 
