@@ -320,5 +320,11 @@ __1.Parent to Child Cammunication__
    * To receive the data from the child we need to implement the AfterViewInit lifecycle hook.
    * It is used to reference the child component as “child” property.
 
+   2.using @Output and EventEmitter.
+   
+   * This method is used when we  want to share data changes when an event occurs  like button clicks, form entires etc..
+   * In child component, we have used @Output property to bind an EventEmitter. This event emitter emits data when a dom event occurs
+   * The child component raises the event and passes the data as the argument to the event. The parent component listens to events using event binding and reads the data
+
         
     
