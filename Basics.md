@@ -326,13 +326,31 @@ __1.Parent to Child Cammunication__
    * In child component, we have used @Output property to bind an EventEmitter. This event emitter emits data when a dom event occurs
    * The child component raises the event and passes the data as the argument to the event. The parent component listens to events using event binding and reads the data
 
-__Example of parent to child cammunication__
+__Example of parent to child cammunication__      
 parentcomponent.html    
  ```html
-
-<button [disabled]="isDisabled">I am disabled</button>
-
+<div>
+    <p>Parent component</p>
+    <app-child [name]="'jamsheer'"></app-child>
+</div>
  ```
+ 
+ childcomponent.ts       
+  ```javascript
+import { Component, OnInit, Input } from '@angular/core';
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.scss']
+})
+export class ChildComponent implements OnInit {
+  @Input() name: string
+  constructor() { }
+  ngOnInit(): void { }
+}
+ ```
+ 
+ 
 
         
     
