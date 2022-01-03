@@ -357,7 +357,6 @@ on click button ths player name is transfered to parent
  childcomponent.ts                         
   ```javascript
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
-
 @Component({
      selector: 'app-child',
      templateUrl: './child.component.html',
@@ -366,11 +365,8 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 export class ChildComponent implements OnInit {
      @Output() selectedPlayer = new EventEmitter();
      Players=["Messi","Ronoldo","Salah","Neymar"];
-
      constructor() { }
-
      ngOnInit(): void { }
-
      OnSelectPlayer(player:string) {
        this.selectedPlayer.emit(player);
      }
