@@ -322,8 +322,8 @@ __1.Parent to Child Cammunication__
 
    2.using @Output and EventEmitter.
    
-   * This method is used when we  want to share data changes when an event occurs  like button clicks, form entires etc..
-   * In child component, we have used @Output property to bind an EventEmitter. This event emitter emits data when a dom event occurs
+   * This method is used when we  want to share data changes when an event occurs  like button clicks, form entires etc.
+   * This is done by using a combination of @Output() decorator and EventEmitter() interface.
    * The child component raises the event and passes the data as the argument to the event. The parent component listens to events using event binding and reads the data
 
 __Example of parent to child cammunication__      
