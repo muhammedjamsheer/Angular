@@ -301,8 +301,8 @@ We can also make use of the template reference variable to pass the value instea
 
   ```
   
-    **[⬆ Back to Top](#table-of-contents)**
-
+  
+ **[⬆ Back to Top](#table-of-contents)**
 
 
 ### Angular Component Cammunication
