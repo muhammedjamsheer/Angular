@@ -7,7 +7,8 @@
 |2 | [Why we use Angular ?](#why-we-use-angular )|
 |3 | [Angular Decorators](#Angular-Decorators )|
 |3 | [Angular Components](#Angular-Components )|
-|4 | [Data Bindings in Angular?](#Data-Bindings-in-Angular )|
+|4 | [Data Bindings in Angular](#Data-Bindings-in-Angular )|
+|5 | [Angular Component Cammunication](#Angular-Component-Cammunication)|
 
 
 
@@ -299,8 +300,15 @@ We can also make use of the template reference variable to pass the value instea
 <input #el (input)="handleInput(el)">
 
   ```
+  
+    **[⬆ Back to Top](#table-of-contents)**
+
+
+
+### Angular Component Cammunication
+
  
- 
+ kkkkkkkkkkkkk
 
         
     
