@@ -326,5 +326,13 @@ __1.Parent to Child Cammunication__
    * In child component, we have used @Output property to bind an EventEmitter. This event emitter emits data when a dom event occurs
    * The child component raises the event and passes the data as the argument to the event. The parent component listens to events using event binding and reads the data
 
+__Example of parent to child cammunication__
+parentcomponent.html    
+ ```html
+
+<button [disabled]="isDisabled">I am disabled</button>
+
+ ```
+
         
     
