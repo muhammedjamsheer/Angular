@@ -326,6 +326,9 @@ __1.Parent to Child Cammunication__
    * This is done by using a combination of @Output() decorator and EventEmitter() interface.
    * The child component raises the event and passes the data as the argument to the event. The parent component listens to events using event binding and reads the data
 
+https://www.freakyjolly.com/how-angular-components-communicate-pass-emit-or-broadcast-data-4-ways-with-examples/
+
+
 __Example of parent to child cammunication__      
 parentcomponent.html    
  ```html
