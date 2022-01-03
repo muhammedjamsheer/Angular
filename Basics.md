@@ -339,14 +339,14 @@ parentcomponent.html
   ```javascript
 import { Component, OnInit, Input } from '@angular/core';
 @Component({
-  selector: 'app-child',
-  templateUrl: './child.component.html',
-  styleUrls: ['./child.component.scss']
+     selector: 'app-child',
+     templateUrl: './child.component.html',
+     styleUrls: ['./child.component.scss']
 })
 export class ChildComponent implements OnInit {
-  @Input() name: string
-  constructor() { }
-  ngOnInit(): void { }
+     @Input() name: string
+     constructor() { }
+     ngOnInit(): void { }
 }
  ```
  
@@ -356,7 +356,7 @@ __Example of child to parent cammunication using @Output and EventEmitter__
 on click button ths player name is transfered to parent
  childcomponent.ts                         
   ```javascript
-    import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 
 @Component({
      selector: 'app-child',
