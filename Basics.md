@@ -307,8 +307,10 @@ We can also make use of the template reference variable to pass the value instea
 
 ### Angular Component Cammunication
 
- 
- kkkkkkkkkkkkk
+we can share data between component in many ways
+__1.Parent to Child__
+ If the Components have a parent-child relationship,then we  can pass the data from the parent component to the child using the __@input__ Property.   
+ In parent component we are using property binding. here we bind the transfering  data .Whenever the value in the parent component changes angular updates the value in the     child component. In the child component, we are using @Input decorator to capture data coming from a parent component 
 
         
     
