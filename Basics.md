@@ -351,6 +351,43 @@ export class ChildComponent implements OnInit {
  ```
  
  
+__Example of child to parent cammunication using @Output and EventEmitter__
+
+on click button ths player name is transfered to parent
+ childcomponent.ts                  
+  ```javascript
+  import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.scss']
+})
+export class ChildComponent implements OnInit {
+  @Output() selectedPlayer = new EventEmitter();
+  Players=["Messi","Ronoldo","Salah","Neymar"];
+  
+  constructor() { }
+
+  ngOnInit(): void { }
+
+  OnSelectPlayer(player:string) {
+    this.selectedPlayer.emit(player);
+  }
+}
+  ```   
+  
+   childcomponent.html                    
+  ```html
+  <button style="margin-left: 10px" class="btn btn-primary" *ngFor="let player of Players"
+    (click)="OnSelectPlayer(player)">{{player}}</button>
+  ```
+  
+  
+  
+  
+ 
+ 
 
         
     
