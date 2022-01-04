@@ -9,6 +9,7 @@
 |3 | [Angular Components](#Angular-Components )|
 |4 | [Data Bindings in Angular](#Data-Bindings-in-Angular )|
 |5 | [Angular Component Cammunication](#Angular-Component-Cammunication)|
+|6 | [Angular Directives](#Angular-Directives )|
 
 
 
@@ -414,6 +415,8 @@ export class ParentComponent implements OnInit {
   }
 }
 ```
+
+### Angular Directives
   
   
   
