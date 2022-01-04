@@ -434,7 +434,7 @@ __1.Component Directive__
   * __ngSwitch__  
   The ngSwitch directive lets you add/remove HTML elements depending on a match expression. ngSwitch directive used along with ngSwitchCase and ngSwitchDefault. 
   
-   __2.Attribute  Directive__                      
+   __3.Attribute  Directive__                      
    An Attribute or style directive can change the appearance or behavior of an element.             
    
    Commonly used Attribute directives are ngModel, ngClass ,ngStyle        
