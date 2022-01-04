@@ -422,7 +422,14 @@ The Angular directives are classified into three categories based on how they be
 __1.Component Directive__                 
  Components are the directives  with a template.                
  __2.Structural  Directive__              
- Structural directives can change the DOM layout by adding and removing DOM elements. All structural Directives are preceded by Asterix symbol.                   
+ Structural directives can change the DOM layout by adding and removing DOM elements. All structural Directives are preceded by Asterix symbol.
+ 
+ Commonly used structural directives are ngIf ,ngFor,ngSwitch,
+ * __ngIf__                  
+ The ngIf Directives is used to add or remove HTML elements based on an expression. The expression must return a boolean value. If the expression is false then the element is removed, else the element is inserted
+ 
+  * __ngFor__               
+  The ngFor is an Angular structural directive, which repeats a portion of the HTML template once per each item from an iterable list              
   
   
   
