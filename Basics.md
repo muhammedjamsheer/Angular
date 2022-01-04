@@ -417,7 +417,12 @@ export class ParentComponent implements OnInit {
 ```
 
 ### Angular Directives
-The Angular directive helps us to manipulate the DOM. You can change the appearance, behavior, or layout of a DOM element using the directives. They help you to extend HTML.    The Angular directives are classified into three categories based on how they behave.  They are Component, Structural and Attribute Directives.            
+The Angular directive helps us to manipulate the DOM. You can change the appearance, behavior, or layout of a DOM element using the directives. They help you to extend HTML.                
+The Angular directives are classified into three categories based on how they behave.  They are Component, Structural and Attribute Directives.   
+__Component Directive__
+ Components are the directives  with a template. 
+ __Structural  Directive__
+ Structural directives can change the DOM layout by adding and removing DOM elements. All structural Directives are preceded by Asterix symbol.          
   
   
   
