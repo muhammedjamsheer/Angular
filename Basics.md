@@ -6,10 +6,12 @@
 |1 | [What is Angular Framework?](#what-is-angular-framework)|
 |2 | [Why we use Angular ?](#why-we-use-angular )|
 |3 | [Angular Decorators](#Angular-Decorators )|
-|3 | [Angular Components](#Angular-Components )|
-|4 | [Data Bindings in Angular](#Data-Bindings-in-Angular )|
-|5 | [Angular Component Cammunication](#Angular-Component-Cammunication)|
-|6 | [Angular Directives](#Angular-Directives )|
+|4 | [Angular Components](#Angular-Components )|
+|5 | [Data Bindings in Angular](#Data-Bindings-in-Angular )|
+|6 | [Angular Component Cammunication](#Angular-Component-Cammunication)|
+|7 | [Angular Directives](#Angular-Directives )|
+|8 | [Angular Pipes](#Angular-Pipes)|
+|9 | [Component Life Cycle Hook](#Component-Life-Cycle-Hook)|
 
 
 
