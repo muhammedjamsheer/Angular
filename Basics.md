@@ -327,10 +327,11 @@ __1.Parent to Child Cammunication__
    * The child component raises the event and passes the data as the argument to the event. The parent component listens to events using event binding and reads the data
 
 __3.Between Non-relational Components__   
-    * If the two components doesn't have a relation, We can Passing Data Through a Service Using Observables.
-    * We will use a shared service, subject variable, and subscription variable to share data between unrelated components.
-    * We have added a subject variable inside the service. We will emit the data from first component using this subject variable.We can emit any type of data from subject variable.
-     * We will subscribe this subject variable in another component and receive the data, which is sent by the first component.
+    * If the two components doesn't have a relation, We can Passing Data Through a Service Using Observables.                            
+    * We will use a shared service, subject variable, and subscription variable to share data between unrelated components.              
+    * We have added a subject variable inside the service.           
+    * We will emit the data from first component using this subject variable.We can emit any type of data from subject variable.                                                 
+    * We will subscribe this subject variable in another component and receive the data, which is sent by the first component.
 
 
 https://www.freakyjolly.com/how-angular-components-communicate-pass-emit-or-broadcast-data-4-ways-with-examples/
