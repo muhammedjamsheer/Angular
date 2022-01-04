@@ -1,1 +1,160 @@
-ddddddddd
+####Data Bindings in Angular
+The data binding in Angular can be broadly classified into two groups. One way binding or two-way binding.
+
+ 
+In __One way data binding__ data flows from one direction. Either from view to component or from component to view.
+examples of one way data bindings are
+1. __Interpolation__    - In interpolation data flows from the component class to the template and it uses the double curly braces expression {{}} to display  data. 
+2. __Property Binding__ -  In Property binding data flows from thecomponent class to the the DOM properties of an HTML element.Property binding uses the square brackets [ ] for data binding.
+3. __Event Binding__ Data flows from the DOM to the component.When a DOM event occurs such as click, hover etc.
+
+
+ In  __Two way data binding__ Data flows both ways ie, changes made in the HTML template is automatically reflect in the component class and vice versa.
+The Angular uses the ngModel directive to achieve the two-way binding.
+Two-way data binding = property binding + event binding.
+
+__Interpolation__ 
+```javascript
+ import { Component } from '@angular/core';
+ 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+title = 'Angular Interpolation Example';
+getTitle(): string {
+     return this.title;
+ }
+ max(first: number, second: number): number {
+  return Math.max(first, second);
+ }
+}
+ ```
+ 
+ ```html
+1.Invoke a method in the component
+{{getTitle()}}
+
+2.Concatenate two string
+<p>Welcome to {{title}}</p>
+<p>Welcome {{firstName}}, {{lastName}}</p>
+<p>Welcome {{getFirstName()}}, {{getLastName()}}</p>
+
+3.Perform some mathematical operations
+<p>100x80 = {{100*80}}</p>
+<p>Largest: {{max(100, 200)}}</p>
+
+4.Bind to an element property
+ <p>Show me <span class = "{{giveMeRed}}">red</span></p>
+ <p style.color={{giveMeRed}}>This is red</p>
+ <img src="{{itemImageUrl}}">
+ <a href="/product/{{productID}}">{{productName}}</a>
+
+5.Use a template reference variable
+ <label>Enter Your Name</label>
+ <input (keyup)="0" #name>
+ <p>Welcome {{name.value}} </p>
+
+  ```
+  
+   __Property Binding__
+
+ ```javascript
+ import { Component } from '@angular/core';
+ 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title="Angular Binding Example"
+  isDisabled:boolean== true;
+  status:string='error';
+  cssStringVar: string= 'red size20';
+  hasError:boolean=false
+  getColor() {
+    return 'yellow';
+  }
+}
+ ```
+ 
+ ```html
+
+<button [disabled]="isDisabled">I am disabled</button>
+
+Class Binding in Angular
+------------------------
+The Angular Class binding is used to add or remove css classes to and from the HTML elements
+The Angular provides the three ways to add/remove classes to and from the element. One using the DOM ClassName Property.
+The second option is to use the Class shorthand. The third option is to use the NgClass directive,
+
+1.Class binding with ClassName
+ <div [className]="'red'">Test</div>
+ <div [className]="'red size20'">Test</div>
+
+Conditionally apply Classes
+<div [className]="cssStringVar">Test</div>
+<div [className]="getClass()">getClass</div>
+<div [className]="hasError() ? 'red' : 'size20'"> conditonal operator </div>
+
+2.Class binding with Class
+<div [class.<className>]="condition"></div>
+className is name of the class, which you want to bind to.
+condition must return true or false. A return value of true adds the class and a false removes the class.
+<div [class.red]="hasError" [class.size20]="hasError">Test</div>
+
+Style binding in Angular
+------------------------
+Syntax -> [style.style-property] = "style-value"
+
+<p [style.color]="'red'">Give me red</p>
+<p [style.background-color]="'grey'">some paragraph with grey background</p>
+<button [style.border]="'5px solid yellow'">Save</button>
+<button [style.font-size.px]="'20'" >Big Button</button>
+
+Conditionally setting the styles
+<button [style.color]="status=='error' ? 'red': 'blue'">Button 1</button>
+<button [style.color]="getColor()">Button 2</button> 
+
+Setting Multiple styles
+<p [style.color]="getColor()" [style.font-size.px]="'20'"   [style.background-color]="status=='error' ? 'red': 'blue'">
+   paragraph with multiple styles </p>
+
+  ```
+   __Event Binding__
+
+ ```javascript
+ import { Component } from '@angular/core';
+ 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  clickCount=0
+  clickMe() {
+     this.clickCount++;
+  }
+}
+ ```
+ 
+ ```html
+<button (click)="clickMe()">Save</button>
+
+Instead of parentheses, you can also use the on- syntax as shown below.
+<button on-click="clickMe()">Click Me</button>
+
+We can also bind an unlimited number of event handlers on the same event by separating them with a semicolon ;
+<button (click)="clickMe() ; clickCount1=clickCount">Click Me</button>
+
+DOM Events carries  the information about the event.
+<input (input)="handleInput($event)">
+
+We can also make use of the template reference variable to pass the value instead of $event.
+<input #el (input)="handleInput(el)">
+
+  ```
