@@ -432,7 +432,15 @@ __1.Component Directive__
   The ngFor is an Angular structural directive, which repeats a portion of the HTML template once per each item from an iterable list.                
   
   * __ngSwitch__  
-  The ngSwitch directive lets you add/remove HTML elements depending on a match expression. ngSwitch directive used along with ngSwitchCase and ngSwitchDefault.        
+  The ngSwitch directive lets you add/remove HTML elements depending on a match expression. ngSwitch directive used along with ngSwitchCase and ngSwitchDefault. 
+  
+   __2.Attribute  Directive__           
+   An Attribute or style directive can change the appearance or behavior of an element.  
+   
+   Commonly used Attribute directives are ngModel, ngClass ,ngStyle
+   
+  * __ngModel__               
+  The ngModel directive is used the achieve the two-way data binding.               
   
   
   
