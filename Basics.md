@@ -431,7 +431,7 @@ __1.Component Directive__
   * __ngFor__               
   The ngFor is an Angular structural directive, which repeats a portion of the HTML template once per each item from an iterable list.                
   
-    * __ngSwitch__  
+  * __ngSwitch__  
   The ngSwitch directive lets you add/remove HTML elements depending on a match expression. ngSwitch directive used along with ngSwitchCase and ngSwitchDefault.        
   
   
