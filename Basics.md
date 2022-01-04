@@ -429,7 +429,10 @@ __1.Component Directive__
  The ngIf Directives is used to add or remove HTML elements based on an expression. The expression must return a boolean value. If the expression is false then the element is removed, else the element is inserted
  
   * __ngFor__               
-  The ngFor is an Angular structural directive, which repeats a portion of the HTML template once per each item from an iterable list              
+  The ngFor is an Angular structural directive, which repeats a portion of the HTML template once per each item from an iterable list.                
+  
+    * __ngSwitch__  
+  The ngSwitch directive lets you add/remove HTML elements depending on a match expression. ngSwitch directive used along with ngSwitchCase and ngSwitchDefault.        
   
   
   
