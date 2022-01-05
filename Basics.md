@@ -469,6 +469,9 @@ Some commonly used predefined Angular pipes are:
 * __DecimalPipe__     -It Transforms a number into a decimal point string. 
 * __SlicePipe__      -It is used to slice some part of array or string.  eg:- {{data | slice : 1:3}}
 * __JsonPipe__       -It is used to display object in JSON format. It is useful for debugging.  eg:-{{data | json}}
-* __AsyncPipe__      -The AsyncPipe subscribes to an observable or promise and returns the latest value it has emitted.  eg:-{{time | async}}                      
+* __AsyncPipe__      -The AsyncPipe subscribes to an observable or promise and returns the latest value it has emitted.  eg:-{{time | async}} 
+
+__Chaining Pipes__                        
+Pipes can be chained together to make use of multiple pipes in one expression. eg:-{{ birthday | date | uppercase }}  , {{time | async | date:'mediumTime'}}                    
         
     
