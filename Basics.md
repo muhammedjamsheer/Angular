@@ -462,6 +462,7 @@ Angular supports many built-in pipes. we can also create custom pipes based on o
 Some commonly used predefined Angular pipes are:                              
 * __UpperCasePipe__   -It transforms text to uppercase.      eg:-  {{name|uppercase}}      
 * __LowerCasePipe__   -It transforms text to lowercase.      eg:-  {{name|lowercase}}    
-* __TitleCasePipe__   -It transforms text to titlecase.      eg:-  {{name|titlecase}}  
+* __TitleCasePipe__   -It transforms text to titlecase.      eg:-  {{name|titlecase}} 
+* __DatePipe__        -It is used to format dates.           eg:-  {{today|date}}  ,  {{today|date:'short'}}  ,  {{today|date:'dd-mm-yy'}} 
         
     
