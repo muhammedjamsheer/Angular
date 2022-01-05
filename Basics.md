@@ -453,12 +453,12 @@ __1.Component Directive__
   
   ### Angular Pipes
  
-Pipes are simple functions designed to accept an input value and return a transformed value as the output.
-Angular Pipes are the class with @Pipe decorator
-syntax  :-  {{ input| pipeName : param1: param2: ...}}
+Pipes are simple functions designed to accept an input value and return a transformed value as the output.             
+Angular Pipes are the class with @Pipe decorator.            
+syntax  :-  {{ input| pipeName : param1: param2: ...}}             
 
-Angular supports many built-in pipes. we can also create custom pipes based on our requirements.
-__Some commonly used predefined Angular pipes are: __    
+Angular supports many built-in pipes. we can also create custom pipes based on our requirements.                        
+__Some commonly used predefined Angular pipes are: __                               
 
 * UpperCasePipe  -It transforms text to uppercase.      eg:-  {{name|uppercase}}      
 * LowerCasePipe  -It transforms text to lowercase.      eg:-  {{name|lowercase}}    
