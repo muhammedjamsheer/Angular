@@ -464,8 +464,11 @@ Some commonly used predefined Angular pipes are:
 * __LowerCasePipe__   -It transforms text to lowercase.      eg:-  {{name|lowercase}}    
 * __TitleCasePipe__   -It transforms text to titlecase.      eg:-  {{name|titlecase}} 
 * __DatePipe__        -It is used to format dates.           eg:-  {{today|date}}  ,  {{today|date:'short'}}  ,  {{today|date:'dd-mm-yy'}}  
-* __CurrencyPipe__    -It Transforms a number to the currency string.      eg:-  {{name|uppercase}}                        
-* __PercentPipe__   -Transforms a number to the percentage string.    eg:-  {{name|lowercase}}                  
-* __DecimalPipe__   -Transforms a number into a decimal point string.      eg:-  {{name|titlecase}}                   
+* __CurrencyPipe__    -It Transforms a number to the currency string.       eg-{{1234567.5555 | currency}}  ,  {{1234567.5555 | currency :'INR'}}                   
+* __PercentPipe__     -It Transforms a number to the percentage string.                        
+* __DecimalPipe__     -It Transforms a number into a decimal point string. 
+* __SlicePipe__      -It is used to slice some part of array or string.  eg:- {{data | slice : 1:3}}
+* __JsonPipe__       -It is used to display object in JSON format. It is useful for debugging.  eg:-{{data | json}}
+* __AsyncPipe__      -The AsyncPipe subscribes to an observable or promise and returns the latest value it has emitted.  eg:-{{time | async}}                      
         
     
