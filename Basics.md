@@ -53,11 +53,11 @@
 
 #### Bootstrapping in Angular
  Bootstrapping is a technique of initializing or loading our Angular application.    
- The Angular takes the following steps to load our first view.             
+ The Angular takes few steps to load our first view.             
  * Index.html Loads First
  * Angular, Third-party libraries & Application loads   
  * Main.ts the application entry point
- * Root Module
+ * Root Module -The angular bootstrapper loads our root module AppModule.
  * Root Component
  * Template
 
