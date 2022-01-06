@@ -5,6 +5,7 @@
 |---- | ---------
 |1 | [What is Angular Framework?](#what-is-angular-framework)|
 |2 | [Why we use Angular ?](#why-we-use-angular )|
+|3 | [Bootstrapping in Angular](#Bootstrapping-in-Angular )|
 |3 | [Angular Decorators](#Angular-Decorators )|
 |4 | [Angular Components](#Angular-Components )|
 |5 | [Data Bindings in Angular](#Data-Bindings-in-Angular )|
@@ -49,6 +50,17 @@
 
 
 **[⬆ Back to Top](#table-of-contents)**
+
+#### Bootstrapping in Angular
+ Bootstrapping is a technique of initializing or loading our Angular application.    
+ The Angular takes the following steps to load our first view.             
+ * Index.html Loads First
+ * Angular, Third-party libraries & Application loads   
+ * Main.ts the application entry point
+ * Root Module
+ * Root Component
+ * Template
+
   
 8. ### Angular Decorators
   Decorators are design patterns used to isolate the modification or decoration of a class without modifying the source code. 
