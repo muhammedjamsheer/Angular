@@ -486,4 +486,5 @@ Some commonly used predefined Angular pipes are:
 __Chaining Pipes__                        
 Pipes can be chained together to make use of multiple pipes in one expression. eg:-{{ birthday | date | uppercase }}  , {{time | async | date:'mediumTime'}}                    
         
-    
+ #Component-Life-Cycle-Hook
+xxxxxxxxxxxxx
