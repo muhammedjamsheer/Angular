@@ -487,8 +487,9 @@ __Chaining Pipes__
 Pipes can be chained together to make use of multiple pipes in one expression. eg:-{{ birthday | date | uppercase }}  , {{time | async | date:'mediumTime'}}                    
         
  ### Component Life Cycle Hook
-__Constructor___   :    It is a Javascript feature.The Constructor is invoked, when a class is created.In Angular constructor is used to inject dependencies.        
-__1.ngOnChanges( )___ : This method is invoked whenever one or more input properties (@input()) of the component changes.                          
-                       The hook receives a SimpleChanges object containing the previous and current values of the property.             
-__2.ngOnInit( )__:    This event executed at the time of Component initialization. This event is called only once, just after the ngOnChanges() events. 
-                     This event is mainly used to initialize data in a component.
+* Constructor  :      It is a Javascript feature.The Constructor is invoked, when a class is created.In Angular constructor is used to inject dependencies.        
+* ngOnChanges( ) :          This method is invoked whenever one or more input properties (@input()) of the component changes.                                    
+                       The hook receives a SimpleChanges object containing the previous and current values of the property.                              
+* ngOnInit( ):    This event executed at the time of Component initialization. This event is called only once, just after the ngOnChanges() events. 
+                     This event is mainly used to initialize data in a component.          
+ 
