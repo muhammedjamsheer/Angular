@@ -495,8 +495,7 @@ Pipes can be chained together to make use of multiple pipes in one expression. e
 * __ngOnInit( )__   This event executed at the time of Component initialization. This event is called only once, just after the ngOnChanges() events. 
                      This event is mainly used to initialize data in a component.  
                      
-* __ngDoCheck( )__   It gets called after ngOnChanges and ngOnInit and is used to detect and act on changes that cannot be detected by Angular.   
- 
+* __ngDoCheck( )__   It gets called after ngOnChanges and ngOnInit and is used to detect and act on changes that cannot be detected by Angular.        
                    OnChanges does not fire when the input property is an array/object because Angular uses dirty checking to compare the properties.        
-                   In such a scenario, where Angular fails to detect the changes to the input property, the DoCheck allows us to implement our custom change detection.     
+                   In such a scenario, where Angular fails to detect the changes to the input property, the DoCheck allows us to implement our custom change detection.            
  
