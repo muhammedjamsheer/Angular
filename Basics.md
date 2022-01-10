@@ -511,7 +511,7 @@ Pipes can be chained together to make use of multiple pipes in one expression. e
 __ng-content__    
 The ng-content tag acts as a placeholder for inserting external or dynamic content. The Parent component passes the external content to the child component.  
 
-__ContentChild and ContentChildren__
+__ContentChild and ContentChildren__                                                
 The ContentChild & ContentChildren are decorators, which we use to Query and get the reference to the Projected Content in the DOM. 
 Projected content is the content that this component receives from a parent component.
 
