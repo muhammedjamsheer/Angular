@@ -13,6 +13,7 @@
 |7 | [Angular Directives](#Angular-Directives )|
 |8 | [Angular Pipes](#Angular-Pipes)|
 |9 | [Component Life Cycle Hook](#Component-Life-Cycle-Hook)|
+|10| [Content Projection In Angular](#Content-Projection-In-Angular)|
 
 
 
@@ -497,5 +498,12 @@ Pipes can be chained together to make use of multiple pipes in one expression. e
                      
 * __ngDoCheck( )__   It gets called after ngOnChanges and ngOnInit and is used to detect and act on changes that cannot be detected by Angular.        
                    OnChanges does not fire when the input property is an array/object because Angular uses dirty checking to compare the properties.        
-                   In such a scenario, where Angular fails to detect the changes to the input property, the DoCheck allows us to implement our custom change detection.            
+                   In such a scenario, where Angular fails to detect the changes to the input property, the DoCheck allows us to implement our custom change detection. 
+                   
+                   
+### Content Projection In Angular.
+* We know how to use @Input decorator to pass data from the parent component to the child component. But it is only limited to data.  
+* We cannot use that technique to pass the content which includes the HTML elements, CSS, etc to the child component. To do that we have to make use of content projection
+
+
  
