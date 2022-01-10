@@ -504,6 +504,15 @@ Pipes can be chained together to make use of multiple pipes in one expression. e
 ### Content Projection In Angular.
 * The @Input decorator to pass data from the parent component to the child component. But it is only limited to data.  
 * When we want to pass the content from parent to the child component which includes the HTML elements, CSS, etc . To do that we have to make use of content projection
+* Content projection is a way to pass the HTML content from the parent component to the child component.
+* The child component will display the template in a designated spot. We use the ng-content element to designate a spot in the template of the child component.   
+* The ng-content also allows us to create multiple slots using the selector attribute. The parent can send different content to each slot.
 
+__ng-content__    
+The ng-content tag acts as a placeholder for inserting external or dynamic content. The Parent component passes the external content to the child component.  
+
+__ContentChild and ContentChildren__
+The ContentChild & ContentChildren are decorators, which we use to Query and get the reference to the Projected Content in the DOM. 
+Projected content is the content that this component receives from a parent component.
 
  
