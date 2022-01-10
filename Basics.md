@@ -502,8 +502,8 @@ Pipes can be chained together to make use of multiple pipes in one expression. e
                    
                    
 ### Content Projection In Angular.
-* We know how to use @Input decorator to pass data from the parent component to the child component. But it is only limited to data.  
-* We cannot use that technique to pass the content which includes the HTML elements, CSS, etc to the child component. To do that we have to make use of content projection
+* The @Input decorator to pass data from the parent component to the child component. But it is only limited to data.  
+* When we want to pass the content from parent to the child component which includes the HTML elements, CSS, etc . To do that we have to make use of content projection
 
 
  
