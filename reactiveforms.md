@@ -100,6 +100,13 @@ setAddress() {
       pincode: "Maharatsra",
   })
 }
+
+
+You can also update the single feild,
+
+setFirstName() {
+  this.reactiveForm.get("firstname").setValue('jamsheer');
+}
 ```
 
 
