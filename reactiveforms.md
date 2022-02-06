@@ -48,9 +48,9 @@ this.contactForm = this.formBuilder.group({
  Next, we need to bind form fields to the FormControl models. We use the FormControlName directive for this.           
  We submit the form data to the component using the Angular directive named ngSubmit            
   ```html
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-<input type="text" id="firstname" name="firstname" formControlName="firstname">
-<input type="text" id="lastname" name="lastname" formControlName="lastname">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <input type="text" id="firstname" name="firstname" formControlName="firstname">
+  <input type="text" id="lastname" name="lastname" formControlName="lastname">
 </form>
   ```
  
