@@ -21,4 +21,32 @@ this.contactForm = this.formBuilder.group({
   lastname: ['']
 });
  ```
+ 
+ ####  Nested FormGroup
+  ```javascript
 
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+ 
+this.contactForm = this.formBuilder.group({
+  firstname: [''],
+  lastname: [''],
+  address: this.formBuilder.group({
+    city: [''],
+    street: [''],
+    pincode: ['']
+  })
+})
+ ```
