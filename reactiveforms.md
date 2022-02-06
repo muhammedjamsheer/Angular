@@ -241,8 +241,30 @@ This Validator requires that the control value must be a valid email address.
  
  ```javascript
    this.reactiveForm.get("firstname").setValidators([Validators.required]);
-   this.reactiveForm.get("address").updateValueAndValidity();
- ```
-  
+   this.reactiveForm.get("firstname").updateValueAndValidity();
+   
+setAddressValidator() {
+  this.reactiveForm.get("address").setValidators([addressValidator]);
+  this.reactiveForm.get("address").updateValueAndValidity();
+}
 
+export const addressValidator = (control: AbstractControl): {[key: string]: boolean} => {
+  const city = control.get('city').value;
+  const state = control.get('state').value;
+  console.log(control.value);
+  if (city=="" && state=="") {
+    return { address:false };
+  }
+  return null;
+};
+ 
+ ```
+ #### clearValidators()
+ clears all validators.
+   ```javascript
+ clearValidation() {
+   this.reactiveForm.get("address").clearValidators();
+   this.reactiveForm.get("address").updateValueAndValidity();
+}
+   ```
  
