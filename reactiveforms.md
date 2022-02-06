@@ -129,9 +129,15 @@ patchValue() {
  
  
  #### 1.value
- The value returns the current value of FormControl.
+ The  the current value of FormControl.
  ```javascript
+
+ // to get value of a  form control
  var firstname = this.contactForm.get("firstname").value
+ 
+ //to get value of a form group
+  var contactform =this.contactForm.value;
+
  ```
  
  #### 2.valueChanges
