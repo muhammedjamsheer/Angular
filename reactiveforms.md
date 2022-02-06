@@ -30,19 +30,7 @@ this.contactForm = this.formBuilder.group({
 });
  ```
  
- ####  Nested FormGroup
-  ```javascript
-this.contactForm = this.formBuilder.group({
-  firstname: [''],
-  lastname: [''],
-  address: this.formBuilder.group({
-    city: [''],
-    street: [''],
-    pincode: ['']
-  })
-})
- ```
- 
+
  #### Binding the template to the model
  This is done using the formGroup directive as shown below.              
  Next, we need to bind form fields to the FormControl models. We use the FormControlName directive for this.           
