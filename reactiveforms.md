@@ -230,11 +230,12 @@ This Validator requires that the control value must be a valid email address.
  this.contactForm = this.formBuilder.group({
   firstname: ['',[Validators.maxLength(15), Validators.pattern("^[a-zA-Z]+$")],  
  });
- 
 
 ```
- 
-  
+#### Disable Submit button
+ ```html
+<button type="submit" [disabled]="!contactForm.valid">Submit</button>
+ ``
   
 
  
