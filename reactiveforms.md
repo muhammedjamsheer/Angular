@@ -191,7 +191,8 @@ this.contactForm.reset()
  ```javascript
  Required Validator
  -----------------
- The required validator returns true only if the formcontrol has a non-empty value entered.The second argument of the FormControl takes the Sync Validator.
+ The required validator returns true only if the formcontrol has a non-empty value entered.      
+ The second argument of the FormControl takes the Sync Validator.
  
   this.contactForm = this.formBuilder.group({
   firstname: ['',[Validators.required]],  
@@ -203,6 +204,16 @@ this.contactForm.reset()
  this.contactForm = this.formBuilder.group({
   firstname: ['',[Validators.required,Validators.minLength(10)]],  
  }); 
+ 
+ 
+ // Maxlength Validator
+This Validator requires that the number of characters must not exceed the value specified in the validator..
+  
+ this.contactForm = this.formBuilder.group({
+  firstname: ['',[Validators.required,Validators.maxLength(10)]],  
+ });
+ 
+ 
 ```
  
   
