@@ -236,8 +236,13 @@ This Validator requires that the control value must be a valid email address.
 ```html
 <button type="submit" [disabled]="!contactForm.valid">Submit</button>
  ```
+ #### setValidators()
+ Programmatically adds validators. This method will remove all the previously added sync or async validators.
  
- 
+ ```javascript
+   this.reactiveForm.get("firstname").setValidators([Validators.required]);
+   this.reactiveForm.get("address").updateValueAndValidity();
+ ```
   
 
  
