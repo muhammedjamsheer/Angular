@@ -123,6 +123,25 @@ patchValue() {
   })
  ```
  The difference is that with setValue we must include all the controls, while with the patchValue you can exclude some controls.
-
+ 
+ 
+ ### Finding the Value
+ 
+ 
+ #### 1.value
+ The value returns the current value of FormControl.
+ ```javascript
+ var firstname = this.contactForm.get("firstname").value
+ ```
+ 
+ #### 2.valueChanges
+ The angular emits the valueChanges event whenever the value of the control changes. The value may change when the user updates the element in the UI or programmatically through the setValue/patchValue method. We can subscribe to it as shown below
+  ```javascript
+  this.fNameChange = this.reactiveForm.get("firstname").valueChanges.subscribe(x => {
+   console.log(x);
+})
+ ```
+  
+  
 
  
