@@ -110,4 +110,19 @@ setFirstName() {
 ```
 
 
+
+ #### 3.PatchValue
+ It will only update the matching objects and ignores the rest.
+  ```javascript
+patchValue() {
+  this.contactForm.patchValue({
+    firstname: "Sachin",
+    address: {
+      city: "19-A, Perry Cross Road, Bandra (West)",
+    }
+  })
+ ```
+ The difference is that with setValue we must include all the controls, while with the patchValue you can exclude some controls.
+
+
  
