@@ -11,4 +11,14 @@ To use the FormBuilder, first, we need to import it in our component.Next, we ne
 import { FormBuilder } from '@angular/forms'
 constructor(private formBuilder: FormBuilder) {}
  ```
+ 
+ #### FormGroup
+ We use the group method to build the Form Group. We pass the list of Form Controls, Form Array, or another Form Group to the group method as key-value pair. Where the key is the name of the FormControl, FormGroup or FormArray. The value is the configuration of the control.
+ 
+  ```javascript
+this.contactForm = this.formBuilder.group({
+  firstname: [''],
+  lastname: ['']
+});
+ ```
 
