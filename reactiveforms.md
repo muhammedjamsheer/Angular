@@ -144,19 +144,32 @@ patchValue() {
  The angular emits the valueChanges event whenever the value of the control changes. The value may change when the user updates the element in the UI or programmatically through the setValue/patchValue method. We can subscribe to it as shown below
 ```javascript
   // to get value of a formcontrol
-  this.fNameChange = this.reactiveForm.get("firstname").valueChanges.subscribe(x => {
+  this.fNameChange = this.contactForm.get("firstname").valueChanges.subscribe(x => {
    console.log(x);
   })
 
   // to get value of a formgroup
-  this.reactiveForm.get("address").valueChanges.subscribe(x => {
+  this.contactForm.get("address").valueChanges.subscribe(x => {
     console.log(x);
   })
   
-   this.reactiveForm.valueChanges.subscribe(x => {
+   this.contactForm.valueChanges.subscribe(x => {
     console.log(x);
   })
  ```
+ 
+ ### Reset
+ Resets the control. We can also pass the default value.
+ 
+ ```javascript
+this.contactForm.get("firstname").reset('');
+this.contactForm.get("firstname").reset()('test');
+
+to reset all feilds in a formgroup
+this.contactForm.reset()
+
+  ```
+ 
   
   
 
