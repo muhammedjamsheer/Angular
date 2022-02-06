@@ -158,6 +158,21 @@ patchValue() {
   })
  ```
  
+ #### EmitEvent & ValueChanges
+ 
+ The ValueChanges event is fired even when the values of the control are changed programmatically. In some circumstances, you might not want to raise the ValueChanges event. To do that we can use the emitEvent: false     
+ 
+In the following example, the ValueChanges event is not fired at all, even though the value of the firstname is changed.
+```javascript
+this.reactiveForm.get("firstname").setValue("", { emitEvent: false }); 
+```
+ #### OnlySelf & ValueChanges
+When onlySelf: true the changes will only affect only this FormControl and change is not bubbled up to its parent.   
+Hence the ValueChanges event of the parent FormGroup does not fire.
+```javascript
+this.reactiveForm.get("firstname").setValue("", { onlySelf: true }); 
+```
+ 
  ### Reset
  Resets the control. We can also pass the default value.
  
@@ -167,7 +182,6 @@ this.contactForm.get("firstname").reset()('test');
 
 to reset all feilds in a formgroup
 this.contactForm.reset()
-
   ```
  
   
