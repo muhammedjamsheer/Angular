@@ -44,9 +44,9 @@ this.contactForm = this.formBuilder.group({
   
   #### Receive the data in the Component class
 ```javascript
-  onSubmit() {
+onSubmit() {
   console.log(this.contactForm.value);
-  }  
+}  
 ```
  
  
