@@ -233,9 +233,11 @@ This Validator requires that the control value must be a valid email address.
 
 ```
 #### Disable Submit button
- ```html
+```html
 <button type="submit" [disabled]="!contactForm.valid">Submit</button>
- ``
+ ```
+ 
+ 
   
 
  
