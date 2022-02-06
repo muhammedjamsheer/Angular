@@ -15,6 +15,12 @@ constructor(private formBuilder: FormBuilder) {}
  #### FormGroup
  We use the group method to build the Form Group. We pass the list of Form Controls, Form Array, or another Form Group to the group method as key-value pair. Where the key is the name of the FormControl, FormGroup or FormArray. The value is the configuration of the control.
  
+  The FormGroup is created with the following syntax
+ ```javascript
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+contactForm: FormGroup;
+ ```
+ 
   ```javascript
 this.contactForm = this.formBuilder.group({
   firstname: [''],
