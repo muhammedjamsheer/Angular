@@ -48,14 +48,7 @@ onSubmit() {
   console.log(this.contactForm.value);
 }  
 ```
-#### Default Value
- 
- ```javascript
-this.contactForm = this.formBuilder.group({
-  firstname: ['muhammed'],
-  lastname: ['jamsheer']
-});
-```
+
 
 #### Nested FormGroup
  ```javascript
@@ -71,4 +64,32 @@ this.contactForm = this.formBuilder.group({
 })
 ```
  
+ ### Setting Value
+ #### 1.Default Value
+```javascript
+this.contactForm = this.formBuilder.group({
+  firstname: ['muhammed'],
+  lastname: ['jamsheer']
+});
+```
+ We use setValue or patchValue method of the FormGroup to set a new value for the entire FormGroup.
+ #### 2.SetValue
+ Sets the value of the FormGroup. It accepts an object that matches the structure of the group, with control names as keys.              
+ The structure must match exactly, otherwise, it will result in an error.
+ 
+ ```javascript
+setValue() {
+  this.contactForm.setValue({
+    firstname: "Sachin",
+    lastname: "Tendulakr",
+    email: "sachin@gmail.com",
+    address: {
+      city: "19-A, Perry Cross Road, Bandra (West)",
+      street: "Mumbai",
+      pincode: "Maharatsra",
+    }
+  })
+}
+```
+
  
