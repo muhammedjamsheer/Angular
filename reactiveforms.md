@@ -205,15 +205,29 @@ this.contactForm.reset()
   firstname: ['',[Validators.required,Validators.minLength(10)]],  
  }); 
  
- 
  // Maxlength Validator
-This Validator requires that the number of characters must not exceed the value specified in the validator..
+This Validator requires that the number of characters must not exceed the value specified in the validator.
   
  this.contactForm = this.formBuilder.group({
   firstname: ['',[Validators.required,Validators.maxLength(10)]],  
  });
  
+ // Pattern Validator
+This Validator requires that the control value must match the regex pattern provided in the attribute.
+For example, the pattern ^[a-zA-Z]+$ ensures that the only letters are allowed (even spaces are not allowed).
+  
+ this.contactForm = this.formBuilder.group({
+  firstname: ['',[Validators.maxLength(15), Validators.pattern("^[a-zA-Z]+$")],  
+ });
  
+ // Email Validator
+This Validator requires that the control value must be a valid email address.
+  
+ this.contactForm = this.formBuilder.group({
+  firstname: ['',[Validators.maxLength(15), Validators.pattern("^[a-zA-Z]+$")],  
+ });
+ 
+
 ```
  
   
