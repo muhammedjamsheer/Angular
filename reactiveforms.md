@@ -13,7 +13,9 @@ constructor(private formBuilder: FormBuilder) {}
  ```
  
  #### FormGroup
- We use the group method to build the Form Group. We pass the list of Form Controls, Form Array, or another Form Group to the group method as key-value pair. Where the key is the name of the FormControl, FormGroup or FormArray. The value is the configuration of the control.
+ We use the group method to build the Form Group. We pass the list of Form Controls, Form Array, or another Form Group to the group method as key-value pair. Where the key is the name of the FormControl, FormGroup or FormArray. The value is the configuration of the control.   
+
+A FormControl takes 3 arguments. a default value, a validator and an asynchronous validator. All of them are optional.
  
   The FormGroup is created with the following syntax
  ```javascript
@@ -40,3 +42,18 @@ this.contactForm = this.formBuilder.group({
   })
 })
  ```
+ 
+ #### Binding the template to the model
+ This is done using the formGroup directive as shown below.              
+ Next, we need to bind form fields to the FormControl models. We use the FormControlName directive for this.           
+ We submit the form data to the component using the Angular directive named ngSubmit            
+  ```html
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<input type="text" id="firstname" name="firstname" formControlName="firstname">
+<input type="text" id="lastname" name="lastname" formControlName="lastname">
+</form>
+  ```
+ 
+ 
+ 
+ 
