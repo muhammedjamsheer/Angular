@@ -183,6 +183,16 @@ this.contactForm.get("firstname").reset()('test');
 to reset all feilds in a formgroup
 this.contactForm.reset()
   ```
+  
+  ### Validation
+  The validators can be added to FormControl, FormGroup or to the FormArray.
+  
+ ```javascript
+  this.contactForm = this.formBuilder.group({
+  firstname: ['',[Validators.required]],
+  lastname: ['',[Validators.required]]
+}); 
+```
  
   
   
