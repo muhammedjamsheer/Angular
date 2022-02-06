@@ -41,6 +41,13 @@ this.contactForm = this.formBuilder.group({
   <input type="text" id="lastname" name="lastname" formControlName="lastname">
 </form>
   ```
+  
+  #### Receive the data in the Component class
+```javascript
+  onSubmit() {
+  console.log(this.contactForm.value);
+  }  
+```
  
  
  
