@@ -90,6 +90,17 @@ setValue() {
     }
   })
 }
+
+You can also update the nested FormGroup separately,
+
+setAddress() {
+  this.reactiveForm.get("address").setValue({
+      city: "19-A, Perry Cross Road, Bandra (West)",
+      street: "Mumbai",
+      pincode: "Maharatsra",
+  })
+}
 ```
+
 
  
