@@ -48,7 +48,6 @@ onSubmit() {
   console.log(this.contactForm.value);
 }  
 ```
-
 #### Default Value
  
  ```javascript
@@ -56,6 +55,20 @@ this.contactForm = this.formBuilder.group({
   firstname: ['muhammed'],
   lastname: ['jamsheer']
 });
+```
+
+#### Nested FormGroup
+ ```javascript
+
+this.contactForm = this.formBuilder.group({
+  firstname: [''],
+  lastname: [''],
+  address: this.formBuilder.group({
+    city: [''],
+    street: [''],
+    pincode: ['']
+  })
+})
 ```
  
  
