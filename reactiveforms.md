@@ -91,7 +91,7 @@ setValue() {
   })
 }
 
-You can also update the nested FormGroup separately,
+//You can also update the nested FormGroup separately,
 
 setAddress() {
   this.reactiveForm.get("address").setValue({
@@ -102,7 +102,7 @@ setAddress() {
 }
 
 
-You can also update the single feild,
+//You can also update the single feild,
 
 setFirstName() {
   this.reactiveForm.get("firstname").setValue('jamsheer');
@@ -148,7 +148,7 @@ patchValue() {
    console.log(x);
   })
 
-  // to get value of a formmgroup
+  // to get value of a formgroup
   this.reactiveForm.get("address").valueChanges.subscribe(x => {
     console.log(x);
   })
