@@ -48,7 +48,14 @@ onSubmit() {
   console.log(this.contactForm.value);
 }  
 ```
+
+#### Default Value
  
- 
+ ```javascript
+this.contactForm = this.formBuilder.group({
+  firstname: ['muhammed'],
+  lastname: ['jamsheer']
+});
+```
  
  
