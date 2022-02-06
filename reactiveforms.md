@@ -187,11 +187,22 @@ this.contactForm.reset()
   ### Validation
   The validators can be added to FormControl, FormGroup or to the FormArray.
   
+  #### 1.Built-in Validators
  ```javascript
+ Required Validator
+ -----------------
+ The required validator returns true only if the formcontrol has a non-empty value entered.The second argument of the FormControl takes the Sync Validator.
+ 
   this.contactForm = this.formBuilder.group({
-  firstname: ['',[Validators.required]],
-  lastname: ['',[Validators.required]]
-}); 
+  firstname: ['',[Validators.required]],  
+ });
+ 
+  // Minlength Validator
+  Minlength validator requires the control value must not have less number of characters than the value specified in the validator.
+  
+ this.contactForm = this.formBuilder.group({
+  firstname: ['',[Validators.required,Validators.minLength(10)]],  
+ }); 
 ```
  
   
