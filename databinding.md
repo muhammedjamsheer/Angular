@@ -42,3 +42,33 @@ getTitle(): string {
 <p>Welcome {{firstName}}, {{lastName}}</p>
 <p>Welcome {{getFirstName()}}, {{getLastName()}}</p>
  ```
+
+  __Perform some mathematical operations__
+ ```javascript
+
+//Template
+<p>100x80 = {{100*80}}</p>
+<p>Largest: {{max(100, 200)}}</p>
+ 
+//Component
+export class AppComponent {
+max(first: number, second: number): number {
+  return Math.max(first, second);
+}
+}
+ ```
+ 
+   __Bind to an element property__
+ ```html
+<p>Show me <span class = "{{giveMeRed}}">red</span></p>
+<p style.color={{giveMeRed}}>This is red</p>
+
+// Bind to an image source
+<img src="{{itemImageUrl}}">
+
+//href
+<a href="/product/{{productID}}">{{productName}}</a>
+ ```
+ 
+ 
+ 
