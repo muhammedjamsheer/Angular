@@ -118,9 +118,7 @@ export class AppComponent {
     <div class="red" [className]="'size20'">red</div>
 
   ```
-   
- 2.Conditionally apply Classes
-    
+ Conditionally apply Classes
  ```javascript
   
  //Template
@@ -141,4 +139,32 @@ export class AppComponent {
   }
 }
  ```
+ 
+ 2.Class binding with Class
+  ```html
+   <div [class.<className>]="condition"></div>
+ ```
+className is name of the class, which you want to bind to.
+condition must return true or false. A return value of true adds the class and a false removes the class.
+
+ ```javascript
+ //Template
+<div [class.red]="hasError" [class.size20]="hasError">Test</div>
+<div [class.red]="hasError()" [class.size20]="hasError()">Test</div>
+
+//The following example uses the Conditional (Ternary) Operator.
+<div [className]="hasError() ? 'red' : 'size20'"> conditonal operator </div>
+
+//Component
+export class AppComponent {
+ hasError:false;
+ hasError(){
+    return true
+ }
+}
+ ```
+
+
+
+ 
    
