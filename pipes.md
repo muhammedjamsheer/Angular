@@ -45,3 +45,11 @@ Option	Equivalent to	Result
 'mediumTime'	'h:mm:ss a'	11:46:39 AM
 'longTime'	'h:mm:ss a z'	11:47:07 AM GMT+5
 'fullTime'	'h:mm:ss a zzzz'	11:47:48 AM GMT+05:30
+
+
+| Option |   Result|
+|----       |---------------|
+|  short    |11/5/21, 11:41 AM     |
+|  medium    |Nov 5, 2021, 11:41:16 AM     |
+|  long    |June 15, 2015 at 9:03:01 AM GMT+1    |
+
