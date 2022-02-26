@@ -104,7 +104,7 @@ export class AppComponent {
  ```
    __Class binding__
    
-   1.Class binding with ClassName
+   1.Class binding with ClassName.              
    The ClassName is the property name of HTML Element. Hence we can make use of Property binding to assign the class name to any HTML element.
    
  ```html
