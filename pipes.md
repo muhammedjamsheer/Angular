@@ -35,9 +35,8 @@ __1. Date Pipe__
 
 Date Pipe Example
 ```javascript 
-<p> Unformatted date : {{toDate }} </p>
-<p> Formatted date : {{toDate | date}} </p>
-// output   Feb 26, 2022
+<p> Unformatted date : {{toDate }} </p>       // output   Sat Feb 26 2022 09:53:41 GMT+0530 (India Standard Time)
+<p> Formatted date : {{toDate | date}} </p>   // output   Feb 26, 2022
 
 export class AppComponent 
 {  
@@ -50,9 +49,9 @@ The Date Expression can be anything that evaluates to date. For example it can b
 
 ```javascript 
 <h3>Date Expression </h3>
-<p>Date Object : {{toDate | date}} </p>       //May 24, 2020
-<p>Number Date : {{numDate | date}} </p>      //May 24, 2020
-<p>ISO Date : {{strDate | date}} </p>         //May 24, 2020
+<p>Date Object : {{toDate | date}} </p>       //  May 24, 2020
+<p>Number Date : {{numDate | date}} </p>      //  May 24, 2020
+<p>ISO Date : {{strDate | date}} </p>         //  May 24, 2020
  
 export class AppComponent 
 {  
@@ -62,6 +61,12 @@ export class AppComponent
 }
 ```
 
+Parameters to Date Pipe
+------------------------
+1.Pre defined Format
+```html 
+<p>{{toDate | date :"short"}} </p>       //  11/5/21, 11:41 AM
+```
 | Option |   Result|
 |----       |---------------|
 |  short    |11/5/21, 11:41 AM     |
@@ -77,6 +82,12 @@ export class AppComponent
 |  longTime    |  11:47:07 AM GMT+5   |
 |  fullTime    |  11:47:48 AM GMT+05:30    |
 
+2.Custom Format string
+
+```html 
+<p>{{toDate | date:'dd/MM/y'}}           </p>       //   24/05/2020
+<p>{{toDate | date:'dd/MM/yy HH:mm'}}    </p>       //   May 24, 2020, 7:17:26 PM
+```
 ![Screenshot (511)](https://user-images.githubusercontent.com/29747486/155829202-a2089d70-fb64-4562-ba33-200242f8c18f.png)
 
 
