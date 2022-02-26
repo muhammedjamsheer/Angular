@@ -31,6 +31,23 @@ Pipes can be chained together to make use of multiple pipes in one expression
 
 ### The Angular Built-in pipes
 
+__1. Date Pipe__
+
++ Date Pipe Example
+```javascript 
+<p> Unformatted date : {{toDate }} </p>
+<p> Formatted date : {{toDate | date}} </p>
+// output   Feb 26, 2022
+
+export class AppComponent 
+{  
+    toDate: Date = new Date(); 
+}
+```
+
++ Date Expression
+
+
 
 | Option |   Result|
 |----       |---------------|
