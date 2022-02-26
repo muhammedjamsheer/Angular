@@ -163,6 +163,41 @@ export class AppComponent {
  }
 }
  ```
+ 
+   __Style binding__
+ ```html
+ [style.style-property] = "style-value"
+ <p [style.color]="'red'">Give me red</p>
+
+ //Setting the background color of a paragraph
+ <p [style.background-color]="'grey'">some paragraph with grey background</p>
+
+//Setting the border style of a button.
+<button [style.border]="'5px solid yellow'">Save</button>
+
+//Setting the units
+<button [style.fontSize.px]="'20'" >Big Button</button>
+
+//Setting Multiple styles
+<p [style.color]="getColor()" 
+   [style.font-size.px]="'20'"      
+   [style.background-color]="status=='error' ? 'red': 'blue'">
+   paragraph with multiple styles
+</p>
+
+//Conditionally setting the styles
+
+<button [style.color]="status=='error' ? 'red': 'blue'">Button 1</button> 
+<button [style.color]="getColor()">Button 2</button> 
+
+export class AppComponent {
+ status:string='error';
+ getColor() {
+  return 'yellow';
+ }
+}
+ ```
+ 
 
 
 
