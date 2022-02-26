@@ -148,11 +148,30 @@ It Transforms a number into a decimal point string
  by default it works as  3 fraction digits after decimal point.
 
  <p>{{ decimal_value | number:'3.4-5' }}</p>     //   055.15335
- In the above code we are instructing decimal pipe to show atleast 3 integer values before decimal points and minimum 1 fraction digit, maximum 5 fraction digits.
+ In the above code we are instructing decimal pipe to show atleast 3 integer values before decimal points 
+ and minimum 1 fraction digit, maximum 5 fraction digits.
 
 export class AppComponent 
 {  
   decimal_value=55.15334533
+}
+```
+https://www.angularjswiki.com/angular/angular-decimal-pipe/
+
+__6.Percentage Pipe__       
+It Transforms a number to the percentage string
+
+{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}
+```javascript 
+<p> {{num1 | percent}} </p>                 //250%
+<p> {{num1 | percent:'2.2-5'}} </p>         //250.00%
+<p> {{num2 | percent:'1.2-5'}} </p>         // 50.00%
+<p> {{num1 * num2 | percent:'1.2-3'}} </p>  //125.00%
+
+export class AppComponent 
+{  
+  num1: number = 2.5;
+  num2: number = 0.5;
 }
 ```
 
