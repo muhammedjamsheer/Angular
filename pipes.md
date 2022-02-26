@@ -44,7 +44,7 @@ export class AppComponent
 }
 ```
 
-Date Expression
+Date Expression.          
 The Date Expression can be anything that evaluates to date. For example it can be a Date object, a number (milliseconds since UTC epoch), or an ISO string
 
 ```javascript 
@@ -63,7 +63,7 @@ export class AppComponent
 
 Parameters to Date Pipe
 ------------------------
-1.Pre defined Format
+__1.Pre defined Format__
 ```html 
 <p>{{toDate | date :"short"}} </p>       //  11/5/21, 11:41 AM
 ```
@@ -82,7 +82,7 @@ Parameters to Date Pipe
 |  longTime    |  11:47:07 AM GMT+5   |
 |  fullTime    |  11:47:48 AM GMT+05:30    |
 
-2.Custom Format string
+__2.Custom Format string__
 
 ```html 
 <p>{{toDate | date:'dd/MM/y'}}           </p>       //   24/05/2020
