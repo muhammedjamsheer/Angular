@@ -102,7 +102,7 @@ export class AppComponent
   message:string="welcome to angular"
 }
 ```
-__3.SlicePipe__
+__3.SlicePipe__          
 Slice Pipe is used to slice some part of array or string.
 ```html 
 array_or_string_expression | slice:start[:end]
@@ -119,7 +119,7 @@ export class AppComponent
     msg: string= 'Welcome to Angular ';
 }
 ```
-__4.Currency Pipe__
+__4.Currency Pipe__        
 It Transforms a number to the currency string
 ```javascript 
 <p>{{amount | currency}}</p>                           //   $150.00
@@ -138,6 +138,23 @@ export class AppComponent
   price:number = 20;
   price2:number=10.111
 }
+```
+https://www.angularjswiki.com/angular/angular-currency-pipe-formatting-currency-in-angular/
+
+__5.Decimal Pipe__   
+It Transforms a number into a decimal point string
+```javascript 
+ <p>{{ decimal_value | number }}</p>     //   55.153
+ by default it works as  3 fraction digits after decimal point.
+
+ <p>{{ decimal_value | number:'3.4-5' }}</p>     //   055.15335
+ In the above code we are instructing decimal pipe to show atleast 3 integer values before decimal points and minimum 1 fraction digit, maximum 5 fraction digits.
+
+export class AppComponent 
+{  
+  decimal_value=55.15334533
+}
+```
 
 
 
