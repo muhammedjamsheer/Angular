@@ -4,7 +4,7 @@ The data binding in Angular can be broadly classified into two groups. One way b
 #### One way binding
 In one way binding data flows from one direction. Either from view to component or from component to view.
 
-#### Interpolation
+### Interpolation
 Data flows from the component to the DOM.We use curly braces for interpolation.
 __Interpolation syntax__
 {{ templateExpression }}
@@ -78,7 +78,7 @@ max(first: number, second: number): number {
 <p>Welcome {{name.value}} </p
  ```
  
- #### Property Binding in Angular
+ ### Property Binding in Angular
  Property binding-Data flows from the component to a property of an element in the DOM.  
  You can set the properties such as class, href, src, textContent, etc using property binding.   
  You can also use it to set the properties of custom components or directives (properties decorated with @Input).      
@@ -102,3 +102,42 @@ export class AppComponent {
   isDisabled= true;
 }
  ```
+   __Class binding__
+   
+   1.Class binding with ClassName
+   The ClassName is the property name of HTML Element. Hence we can make use of Property binding to assign the class name to any HTML element.
+     ```html
+    //The following example assigns CSS Class red to the div element.
+    <div [className]="'red'">Test</div>
+    
+    //You can also add more than one class by separating them using the
+    <div [className]="'red size20'">Test</div>
+    
+    //mixing both class and [className] results in removal of class attribute. You cannot use both.
+    <div class="red" [className]="'size20'">red</div>
+
+    ```
+   
+    2.Conditionally apply Classes
+    
+ ```javascript
+  
+ //Template
+<div [className]="cssStringVar">Test</div>
+<div [className]="getClass()">getClass</div>
+
+//The following example uses the Conditional (Ternary) Operator.
+<div [className]="hasError() ? 'red' : 'size20'"> conditonal operator </div>
+
+//Component
+export class AppComponent {
+  cssStringVar: string= 'red size20';
+  getClass() {
+    return 'red';
+  }
+  hasError(){
+    return true
+  }
+}
+ ```
+   
