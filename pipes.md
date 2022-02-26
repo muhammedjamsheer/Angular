@@ -49,28 +49,6 @@ Pipes can be chained together to make use of multiple pipes in one expression
 
 
 
-|Component	|format	| Example |
-|----       |---------------|
-|Year|	y|	2016|
-|Year|	yy|	16|
-|Month|	M|	9|
-|Month|	M|	99|
-|Month|	MMM|	Nov|
-|Month|	MMMM|	November|
-|Day|	d|	9|
-|Day|	dd|	09|
-|hour|	j|	9|
-|hour|	jj|	09|
-|hour|	h|	9 AM|
-|hour	|hh|	09 AM|
-|hour24|	H|	13|
-|hour24|	HH|	13|
-|minute|	m|	9|
-|minute|	mm|	09|
-|second|	s|	9|
-|second|	ss|	99|
-|Time| zone	z|	Pacific Standard time|
-|Time| zone	Z|	GMT-8:00|
-|Time| zone	a|	PM|
+
 
 
