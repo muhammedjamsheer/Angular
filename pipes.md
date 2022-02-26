@@ -90,7 +90,7 @@ __2.Custom Format string__
 ```
 ![Screenshot (511)](https://user-images.githubusercontent.com/29747486/155829202-a2089d70-fb64-4562-ba33-200242f8c18f.png)
 
-#### UpperCasePipe & LowerCasePipe &TitleCasePipe
+__2.UpperCasePipe & LowerCasePipe &TitleCasePipe__  
 these pipes transform the string to Uppercase or lowercase or titlecase
 ```javascript 
 <p>{{msg | uppercase}} </p>  // WELCOME TO ANGULAR
@@ -102,6 +102,43 @@ export class AppComponent
   message:string="welcome to angular"
 }
 ```
+__3.SlicePipe__
+Slice Pipe is used to slice some part of array or string.
+```html 
+array_or_string_expression | slice:start[:end]
+
+start is the start position/index from where the slicing will start
+end is the ending index/position in the array/string
+````
+
+```javascript 
+<p>{{msg | slice:11:20}} </p>   //  Angular
+<p>{{msg | slice:-10}} </p>    //  to Angular
+export class AppComponent 
+{  
+    msg: string= 'Welcome to Angular ';
+}
+```
+__4.Currency Pipe__
+It Transforms a number to the currency string
+```javascript 
+<p>{{amount | currency}}</p>                           //   $150.00
+<p>{{amount | currency:'INR'}}</p>                     //   ₹150.00
+<p>{{amount | currency:'INR':'code'}}</p>              //   INR150.00
+<p>{{amount | currency:'INR':'Indian Rupee'}}</p>      //   Indian Rupee150.00
+
+ display a number as two decimal rounded currency
+ -----------------------------------------------
+<div>{{price | currency:'USD':true:'1.2-2'}}</div>      //   $20.00
+<div>{{price2 | currency:'USD':true:'1.2-2'}}</div>     //   $10.11
+ 
+export class AppComponent 
+{  
+  amount:number=150;
+  price:number = 20;
+  price2:number=10.111
+}
+
 
 
 
