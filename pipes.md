@@ -33,7 +33,7 @@ Pipes can be chained together to make use of multiple pipes in one expression
 
 __1. Date Pipe__
 
-+ Date Pipe Example
+Date Pipe Example
 ```javascript 
 <p> Unformatted date : {{toDate }} </p>
 <p> Formatted date : {{toDate | date}} </p>
@@ -45,9 +45,22 @@ export class AppComponent
 }
 ```
 
-+ Date Expression
-[![](https://img.shields.io/badge/github-blue?style=for-the-badge)](https://github.com/hamzamohdzubair/redant)
+Date Expression
+The Date Expression can be anything that evaluates to date. For example it can be a Date object, a number (milliseconds since UTC epoch), or an ISO string
 
+```javascript 
+<h3>Date Expression </h3>
+<p>Date Object : {{toDate | date}} </p>       //May 24, 2020
+<p>Number Date : {{numDate | date}} </p>      //May 24, 2020
+<p>ISO Date : {{strDate | date}} </p>         //May 24, 2020
+ 
+export class AppComponent 
+{  
+  toDate: Date = new Date();
+  numDate=1590319189931;
+  strDate="Sun May 24 2020 19:16:23";
+}
+```
 
 | Option |   Result|
 |----       |---------------|
