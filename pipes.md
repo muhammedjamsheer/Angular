@@ -32,21 +32,6 @@ Pipes can be chained together to make use of multiple pipes in one expression
 ### The Angular Built-in pipes
 
 
-Option	Equivalent to	Result
-'short'	'M/d/yy, h:mm a'	11/5/21, 11:41 AM
-'medium'	'MMM d, y, h:mm:ss a'	Nov 5, 2021, 11:41:16 AM
-'long'	'MMMM d, y, h:mm:ss a z'	June 15, 2015 at 9:03:01 AM GMT+1
-'full'	'EEEE, MMMM d, y, h:mm:ss a zzzz'	November 5, 2021 at 11:41:16 AM GMT+5
-'shortDate'	'M/d/yy'	11/5/21
-'mediumDate'	'MMM d, y'	Nov 5, 2021
-'longDate'	'MMMM d, y'	November 5, 2021
-'fullDate'	'EEEE, MMMM d, y'	Friday, November 5, 2021
-'shortTime'	'h:mm a'	11:46 AM
-'mediumTime'	'h:mm:ss a'	11:46:39 AM
-'longTime'	'h:mm:ss a z'	11:47:07 AM GMT+5
-'fullTime'	'h:mm:ss a zzzz'	11:47:48 AM GMT+05:30
-
-
 | Option |   Result|
 |----       |---------------|
 |  short    |11/5/21, 11:41 AM     |
@@ -61,5 +46,30 @@ Option	Equivalent to	Result
 |  mediumTime    |11:46:39 AM  |
 |  longTime    |  11:47:07 AM GMT+5   |
 |  fullTime    |  11:47:48 AM GMT+05:30    |
+
+
+
+|Component	|format	| Example |
+|Year|	y|	2016
+|Year|	yy|	16
+|Month|	M|	9
+|Month|	M|	99
+|Month|	MMM|	Nov
+|Month|	MMMM|	November
+|Day|	d|	9
+|Day|	dd|	09
+|hour|	j|	9
+|hour|	jj|	09
+|hour|	h|	9 AM
+|hour	|hh|	09 AM
+|hour24|	H|	13
+|hour24|	HH|	13
+|minute|	m|	9
+|minute|	mm|	09
+|second|	s|	9|
+|second|	ss|	99
+|Time| zone	z|	Pacific Standard time
+|Time| zone	Z|	GMT-8:00
+|Time| zone	a|	PM
 
 
