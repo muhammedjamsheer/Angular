@@ -27,9 +27,18 @@ export class AppComponent {
 {{getTitle()}}
  
 //Component
+export class AppComponent {
 title = 'Angular Interpolation Example';
 getTitle(): string {
      return this.title;
  }
+}
+ ```
  
+  __Concatenate two string__
+ ```html
+<p>Welcome to {{title}}</p>
+<p>{{ 'Hello & Welcome to '+ ' Angular Interpolation '}}</p>
+<p>Welcome {{firstName}}, {{lastName}}</p>
+<p>Welcome {{getFirstName()}}, {{getLastName()}}</p>
  ```
