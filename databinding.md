@@ -11,18 +11,25 @@ __Interpolation syntax__
 
 __Interpolation Example__
  ```javascript
- import { Component } from '@angular/core';
- 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
+//Template
+ {{title}}
+
+//Component
 export class AppComponent {
   title = 'Angular Interpolation Example';
 }
  ```
  
- ```html
-{{title}}
-  ```
+ __Invoke a method in the component__
+ ```javascript
+
+//Template
+{{getTitle()}}
+ 
+//Component
+title = 'Angular Interpolation Example';
+getTitle(): string {
+     return this.title;
+ }
+ 
+ ```
