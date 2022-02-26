@@ -51,5 +51,12 @@ Option	Equivalent to	Result
 |----       |---------------|
 |  short    |11/5/21, 11:41 AM     |
 |  medium    |Nov 5, 2021, 11:41:16 AM     |
-|  long    |June 15, 2015 at 9:03:01 AM GMT+1    |
+|  long    |  June 15, 2015 at 9:03:01 AM GMT+1    |
+|  full    |  November 5, 2021 at 11:41:16 AM GMT+5    |
+
+|  shortDate    |11/5/21     |
+|  mediumDate    |Nov 5, 2021   |
+|  longDate    |  November 5, 2021   |
+|  fullDate    |  Friday, November 5, 2021    |
+
 
