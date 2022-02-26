@@ -78,5 +78,27 @@ max(first: number, second: number): number {
 <p>Welcome {{name.value}} </p
  ```
  
+ #### Property Binding in Angular
+ Property binding-Data flows from the component to a property of an element in the DOM.  
+ You can set the properties such as class, href, src, textContent, etc using property binding.   
+ You can also use it to set the properties of custom components or directives (properties decorated with @Input).      
+ We use brackets for property binding.
  
- 
+ __Property Binding Syntax__
+  ```html
+[binding-target]=”binding-source”
+ ```
+  __Property Binding Example__
+  ```javascript
+  
+ //Template
+<h1 [innerText]="title"></h1>
+<h2>Example 1</h2>
+<button [disabled]="isDisabled">I am disabled</button>
+
+//Component
+export class AppComponent {
+  title="Angular Property Binding Example"
+  isDisabled= true;
+}
+ ```
