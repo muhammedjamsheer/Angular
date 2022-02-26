@@ -106,7 +106,8 @@ export class AppComponent {
    
    1.Class binding with ClassName
    The ClassName is the property name of HTML Element. Hence we can make use of Property binding to assign the class name to any HTML element.
-     ```html
+   
+ ```html
     //The following example assigns CSS Class red to the div element.
     <div [className]="'red'">Test</div>
     
@@ -116,9 +117,9 @@ export class AppComponent {
     //mixing both class and [className] results in removal of class attribute. You cannot use both.
     <div class="red" [className]="'size20'">red</div>
 
-    ```
+  ```
    
-    2.Conditionally apply Classes
+ 2.Conditionally apply Classes
     
  ```javascript
   
