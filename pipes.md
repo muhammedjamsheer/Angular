@@ -57,5 +57,9 @@ Option	Equivalent to	Result
 |  mediumDate    |Nov 5, 2021   |
 |  longDate    |  November 5, 2021   |
 |  fullDate    |  Friday, November 5, 2021    |
+|  shortTime    |11:46 AM   |
+|  mediumTime    |11:46:39 AM  |
+|  longTime    |  11:47:07 AM GMT+5   |
+|  fullTime    |  11:47:48 AM GMT+05:30    |
 
 
