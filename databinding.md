@@ -198,6 +198,37 @@ export class AppComponent {
 }
  ```
  
+ ### Event Binding
+ Data flows from the DOM to the component.When a DOM event occurs such as click etc.
+ 
+ ```html
+<button (click)="onSave()">Save</button>
+
+Instead of parentheses, you can also use the on- syntax as shown below
+<button on-click="clickMe()">Click Me</button>
+
+Multiple event handlers
+<button (click)="clickMe() ; clickCount1=clickCount">Click Me</button>
+
+DOM Events carries the event payload. I.e the information about the event.
+We can access the event payload by using $event as an argument to the handler function.
+<input (input)="handleInput($event)">
+
+We can also make use of the template reference variable to pass the value instead of $event.
+<input #el (input)="handleInput1(el)">
+
+export class AppComponent {
+ value="";
+ val="";
+ handleInput(event) {
+   this.value = (event.target as HTMLInputElement).value;
+ }
+ handleInput1(element) {
+   this.val=element.value;
+ }
+}
+
+```
 
 
 
