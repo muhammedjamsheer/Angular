@@ -70,5 +70,13 @@ max(first: number, second: number): number {
 <a href="/product/{{productID}}">{{productName}}</a>
  ```
  
+   __Use a template reference variabley__
+ ```html
+ 
+<label>Enter Your Name</label>
+<input (keyup)="0" #name>
+<p>Welcome {{name.value}} </p
+ ```
+ 
  
  
