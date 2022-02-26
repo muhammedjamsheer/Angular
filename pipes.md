@@ -90,5 +90,18 @@ __2.Custom Format string__
 ```
 ![Screenshot (511)](https://user-images.githubusercontent.com/29747486/155829202-a2089d70-fb64-4562-ba33-200242f8c18f.png)
 
+#### UpperCasePipe & LowerCasePipe &TitleCasePipe
+these pipes transform the string to Uppercase or lowercase or titlecase
+```javascript 
+<p>{{msg | uppercase}} </p>  // WELCOME TO ANGULAR
+<p>{{msg | lowercase}} </p>` // welcome to angular
+<p>{{message | titlecase}} </p>` // welcome to angular
+export class AppComponent 
+{  
+  msg: string= 'Welcome to Angular';
+  message:string="welcome to angular"
+}
+```
+
 
 
