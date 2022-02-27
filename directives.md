@@ -114,3 +114,25 @@ trackByData() method to access each student element in a unique way based on the
 </ul>
 
 ```
+__ngSwitch directive__
+The ngSwitch directive lets you add/remove HTML elements depending on a match expression.         
+ngSwitch directive used along with ngSwitchCase and ngSwitchDefault.   
+
+```javascript
+<ul [ngSwitch]="logInName"> 
+   <li *ngSwitchCase="'user'"> 
+      <p>User is logged in..</p> 
+   </li> 
+   <li *ngSwitchCase="'admin'"> 
+      <p>admin is logged in</p> 
+   </li> 
+   <li *ngSwitchDefault> 
+      <p>Please choose login name</p> 
+   </li> 
+</ul>
+
+export class TestComponent implements OnInit {  
+   logInName = 'admin'; 
+}
+
+```
