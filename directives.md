@@ -147,11 +147,19 @@ The ngClass directive is used to add or remove the CSS classes from an HTML elem
 ```html
 //single condition
 <div [ngClass]="{'text-success':person.country === 'UK'}"></div>
+<div [ngClass]="{'text-success': person.country === 'UK' && person.country === 'INDIA'}"></div>
 
 //multiple condition
 <div [ngClass]="{'text-success':person.country === 'UK', 'text-danger':person.country === 'INDIA' }"></div>
 
 //terenary
 <div [ngClass]="val > 10 ? 'text-success' : 'text-danger'"></div>
+
+//Method expression
+<div [ngClass]="getSomeClass()"></div>
+getSomeClass(){
+   const isValid=this.property1 && this.property2;
+   return {someClass1:isValid , someClass2:isValid};
+ }
 ```
 
