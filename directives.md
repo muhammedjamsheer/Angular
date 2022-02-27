@@ -49,7 +49,7 @@ The *ngIf directive  with  "then" and "else" block
 </ng-template> 
 ````
 
-__ngFor Directive__
+__ngFor Directive__          
 The ngFor is an Angular structural directive, which repeats a portion of the HTML template once per each item from an iterable list.     
 ```html
 items = [1,2,3,4,5];
@@ -79,7 +79,7 @@ Identifying the first and the last element of a list
 </tr>
 
 ```
-__trackBy__
+__trackBy__            
 Sometimes, ngFor performance is low with large lists. For example, when adding new item or remove any item in the list may trigger several DOM manipulations. To iterate over large objects collection, we use trackBy.
 
 It is used to track when elements are added or removed. It is performed by trackBy method. It has two arguments index and element. Index is used to identity each element uniquely. Simple example is defined below.
