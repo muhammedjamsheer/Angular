@@ -7,7 +7,7 @@ The Angular directives are classified into three categories based on how they be
 Structural directives can change the DOM layout by adding and removing DOM elements. All structural Directives are preceded by Asterix symbol.    
 Commonly used structural directives are ngIf ,ngFor,ngSwitch.               
 
-__ngIf Directive____    
+__ngIf Directive__   
 The NgIf directive is used when you want to display or remove an element based on a condition.
 The expression must return a boolean value.        
 If the expression is false then the element is removed, else the element is inserted        
@@ -164,7 +164,7 @@ getSomeClass(){
  }
 ```
 
-__ngStyle__
+__ngStyle__         
 ngStyle directive is used to add dynamic styles.
 ```html
 //terenary
