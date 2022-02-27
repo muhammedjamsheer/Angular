@@ -148,6 +148,7 @@ The ngClass directive is used to add or remove the CSS classes from an HTML elem
 //single condition
 <div [ngClass]="{'text-success':person.country === 'UK'}"></div>
 <div [ngClass]="{'text-success': person.country === 'UK' && person.country === 'INDIA'}"></div>
+<div [ngClass]="{ 'activeClass': condition,'inactiveClass': !condition, 'focusClass': condition && otherCondition}"> 
 
 //multiple condition
 <div [ngClass]="{'text-success':person.country === 'UK', 'text-danger':person.country === 'INDIA' }"></div>
@@ -162,4 +163,27 @@ getSomeClass(){
    return {someClass1:isValid , someClass2:isValid};
  }
 ```
+
+__ngStyle__
+ngStyle directive is used to add dynamic styles.
+```html
+//terenary
+<div [ngStyle]="{'background-color':person.country === 'UK' ? 'green' : 'red' }"></<div>
+<div [ngStyle]="styleOne?{'background-color': 'red'} : {'background-color': 'blue'}"></<div>
+    
+//Metod expression
+<div [ngStyle]="{'color':getColor(country)}"></div>
+    
+  getColor(country) { 
+    switch (country) {
+      case 'UK':
+        return 'green';
+      case 'USA':
+        return 'blue';
+      case 'HK':
+        return 'red';
+    }
+  }   
+```
+
 
