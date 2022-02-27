@@ -114,7 +114,7 @@ trackByData() method to access each student element in a unique way based on the
 </ul>
 
 ```
-__ngSwitch directive__
+__ngSwitch directive__    
 The ngSwitch directive lets you add/remove HTML elements depending on a match expression.         
 ngSwitch directive used along with ngSwitchCase and ngSwitchDefault.   
 
@@ -136,3 +136,22 @@ export class TestComponent implements OnInit {
 }
 
 ```
+
+### Attribute Directive     
+An Attribute or style directive can change the appearance or behavior of an element.
+Commonly used Attribute directives are ngModel, ngClass ,ngStyle
+
+__ngClass__           
+The ngClass directive is used to add or remove the CSS classes from an HTML element. Using the ngClass we can create dynamic styles in HTML pages.   
+
+```html
+//single condition
+<div [ngClass]="{'text-success':person.country === 'UK'}"></div>
+
+//multiple condition
+<div [ngClass]="{'text-success':person.country === 'UK', 'text-danger':person.country === 'INDIA' }"></div>
+
+//terenary
+<div [ngClass]="val > 10 ? 'text-success' : 'text-danger'"></div>
+```
+
