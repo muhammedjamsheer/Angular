@@ -33,6 +33,32 @@ export class ChildComponent implements OnInit {
   @Input() actors: Array<string> = [];
 
 }
-
-
 ```
+
+__Aliasing input Property__              
+You can Alias the input property and use the aliased name the parent component as shown below
+
+```javscript
+parent.component.html
+-----------------------
+ <app-child [student]="studentname"></app-child>
+
+parent.component.ts
+----------------------
+export class ParentComponent implements OnInit {
+  studentname: string = "muhammed jamsheer";
+}
+
+child.component.ts
+-----------------
+import { Component, OnInit,Input } from '@angular/core';
+
+export class ChildComponent implements OnInit {
+  @Input('student') studentfirstname: string;
+}
+
+child.component.html
+--------------------
+<p>Student name:{{studentfirstname}}</p>
+```
+ 
