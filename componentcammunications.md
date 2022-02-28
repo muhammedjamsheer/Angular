@@ -61,4 +61,80 @@ child.component.html
 --------------------
 <p>Student name:{{studentfirstname}}</p>
 ```
+
+__Detecting the Input changes__   
+
+ngOnChanges is a lifecycle hook, which angular fires when it detects changes to data-bound input property. 
+This method receives a SimpeChanges object, which contains the current and previous property values.
+We can Intercept input property changes in the child component using this hook.
+
+
+```javscript
+parent.component.html
+-----------------------
+
+<button class="btn btn-danger" (click)="Increment()">Increment</button>
+<app-child [MyCount]="counts"></app-child>
+<button class="btn btn-danger" (click)="Decrement()">Decrement</button>
+
+parent.component.ts
+----------------------
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.scss']
+})
+export class ParentComponent implements OnInit {
+  counts: number = 5;
+  constructor() { }
+  ngOnInit(): void {}
+  
+  Increment() {
+    this.counts++;
+  }
+  Decrement() {
+    this.counts--;
+  }
+}
+
+
+child.component.ts
+-----------------
+import { Component, Input,OnInit, OnChanges, SimpleChanges, SimpleChange  } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.scss']
+})
+export class ChildComponent implements OnInit {
+
+  @Input('MyCount') count: number;
+
+  constructor() { }
+
+  ngOnInit(): void {}
+
+  ngOnChanges(changes: SimpleChanges) {
+ 
+    for (let property in changes) {
+        if (property === 'count') {
+          console.log('Previous:', changes[property].previousValue);
+          console.log('Current:', changes[property].currentValue);
+          console.log('firstChange:', changes[property].firstChange);
+        } 
+    }
+  }
+}
+
+
+child.component.html
+--------------------
+<p> current count is {{ count }}</p>
+```
+
+
+
  
