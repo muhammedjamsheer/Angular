@@ -135,6 +135,17 @@ child.component.html
 <p> current count is {{ count }}</p>
 ```
 
+1.Child to Parent Cammunication
+--------------------------------
+### Using @ViewChild decorator
+
+ViewChild allows the child component to be injected in to the parent component.In this way the parent component can access attributes and functions of child component.
+To receive the data from the child we need to implement the AfterViewInit lifecycle hook.
+
+
+
+
+
 
 
  
