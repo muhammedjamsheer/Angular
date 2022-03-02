@@ -142,9 +142,96 @@ child.component.html
 ViewChild allows the child component to be injected in to the parent component.In this way the parent component can access attributes and functions of child component.
 To receive the data from the child we need to implement the AfterViewInit lifecycle hook.
 
+childcomponent.ts
+```javascript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.scss']
+})
+export class ChildComponent implements OnInit {
+  productInChild: any[] = [];
+  constructor() { }
+
+  ngOnInit(): void {
+    this.getProducts();
+  }
+
+  public getProducts() {
+    this.productInChild = [
+      {
+        ProductId: 1,
+        ArtNo: "100",
+        Brand: "Oppo",
+        Price: 7810.23,
+      },
+      {
+        ProductId: 1,
+        ArtNo: "101",
+        Brand: "Oppo",
+        Price: 2310.23,
+      },
+    ];
+  }
+
+}
+
+```
+
+parentcomponent.ts
+```javascript
+
+import { Component, OnInit, ViewChild, AfterViewInit,ChangeDetectorRef } from '@angular/core';
+import { ChildComponent } from 'src/app/child/child.component';
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.scss']
+})
+export class ParentComponent implements  OnInit {
+  @ViewChild(ChildComponent) child: any;
+  productInParent:any[]=[];  
+  constructor(
+    private cdRef: ChangeDetectorRef 
+  ) { }
+
+  ngOnInit(): void {
+  }
+  ngAfterViewInit() {  
+    this.productInParent = this.child.productInChild;  
+    this.cdRef.detectChanges(); 
+  }
+}
+
+```
 
 
+parentcomponent.html
+```html
+<app-child></app-child>
 
+<div class="container card">
+    <table class="table table-bordered heading-hvr">
+        <thead>
+            <tr>
+                <th width="50">Art.No</th>
+                <th>Brand</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let product of productInParent; let i = index">
+            <tr>
+                <td align="center">{{product.ArtNo}}</td>
+                <td>{{product.Brand}}</td>
+                <td>{{product.Price }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+```
 
 
 
