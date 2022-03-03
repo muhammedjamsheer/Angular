@@ -233,6 +233,59 @@ parentcomponent.html
 </div>
 ```
 
+### Using @Output and EventEmitter
+
+childComponent.html
+```html
+<button class='btn btn-primary' (click)="valueChanged()">Click me</button>
+```
+childComponent.ts
+```javascript
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.scss']
+})
+export class ChildComponent implements OnInit {
+  @Output() valueChange = new EventEmitter();
+  counter: number = 0;
+  constructor() { }
+
+  ngOnInit(): void { }
+
+  valueChanged() {
+    this.counter = this.counter + 1;
+    this.valueChange.emit(this.counter);
+  }
+}
+```
+parentComponent.html
+```html
+<app-child (valueChange)='displayCounter($event)'></app-child>
+{{count}}
+```
+parentComponent.ts
+```javascript
+import { Component, OnInit, } from '@angular/core';
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.scss']
+})
+export class ParentComponent implements OnInit {
+  count: number
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  displayCounter(count: number) {
+    this.count = count;
+  }
+}
+```
 
 
  
