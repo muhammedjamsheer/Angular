@@ -291,5 +291,80 @@ export class ParentComponent implements OnInit {
 }
 ```
 
+### Sharing Data Between Components Using RxJS            
+__Pass Data Between Components Using BehaviorSubject__              
+BehaviorSubject is a RxJS Observable that is used to hold value throughout the application.
+Behavior Subject is similar to subject but only difference is that we can set the initial value .
+BehaviorSubject are a great way to pass data back forth between a large number of components.
+The two main methods are subscribe , for listening to new values and next, for setting new values.
+
+data.service.ts
+```javascript
+import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
+ 
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+  private dataSource: BehaviorSubject<string> = new BehaviorSubject<string>('Initial Value');
+  data: Observable<string> = this.dataSource.asObservable();
+ 
+  constructor() { }
+ 
+  sendData(data: string) {
+    this.dataSource.next(data);
+  }
+}
+```
+
+sender.component.ts
+```javascript
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+ 
+@Component({
+  selector: 'app-sender',
+  templateUrl: './sender.component.html',
+  styleUrls: ['./sender.component.scss']
+})
+export class SenderComponent implements OnInit {
+ 
+  constructor(private dataService: DataService) { }
+ 
+  ngOnInit(): void {
+    this.sendNewData('New Data Here');
+  }
+ 
+  sendNewData(data: string) {
+    this.dataService.sendData(data);
+  }
+}
+```
+receiver.component.ts
+```javascript
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+ 
+@Component({
+  selector: 'app-receiver',
+  templateUrl: './receiver.component.html',
+  styleUrls: ['./receiver.component.scss']
+})
+export class ReceiverComponent implements OnInit {
+ 
+  constructor(private dataService: DataService) { }
+ 
+  ngOnInit(): void {
+    this.getData();
+  }
+ 
+  getData() {
+    this.dataService.data.subscribe(response => {
+      console.log(response);  // you will receive the data from sender component here.
+    });
+  }
+}
+```
 
  
