@@ -12,11 +12,11 @@ We can use these references to manipulate element properties in the component.
  
  
  #### Using Static Option in ViewChild
- The static option determines the timing of the ViewChild query resolution.
- The static option in ViewChild is used to resolve query results before change detection runs and also after change detection runs.
- To resolve query results before the change detection runs, you need to set static option value as true.
- To resolve query results after the change detection runs, you need to set static option value as false. The default value of static option is false.
- The value of the static becomes important when the child is rendered dynamically. For Example inside a ngIf or ngSwitch etc.
+ The static option determines the timing of the ViewChild query resolution.          
+ The static option in ViewChild is used to resolve query results before change detection runs and also after change detection runs.           
+ To resolve query results before the change detection runs, you need to set static option value as true.            
+ To resolve query results after the change detection runs, you need to set static option value as false. The default value of static option is false.            
+ The value of the static becomes important when the child is rendered dynamically. For Example inside a ngIf or ngSwitch etc.              
  
  #### 1.Injecting Component or Directive Reference
  ```Javascript
