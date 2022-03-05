@@ -16,7 +16,8 @@ We can use these references to manipulate element properties in the component.
  The static option in ViewChild is used to resolve query results before change detection runs and also after change detection runs.           
  To resolve query results before the change detection runs, you need to set static option value as true.            
  To resolve query results after the change detection runs, you need to set static option value as false. The default value of static option is false.            
- The value of the static becomes important when the child is rendered dynamically. For Example inside a ngIf or ngSwitch etc.              
+ The value of the static becomes important when the child is rendered dynamically. For Example inside a ngIf or ngSwitch etc. 
+ https://medium.com/nerd-for-tech/angular-viewchild-for-component-dom-element-element-of-component-and-directive-c23328ee1525
  
  #### 1.Injecting Component
  ```Javascript
@@ -40,7 +41,7 @@ export class AppComponent implements AfterViewInit {
  ```
  
 
- #### 2.Injecting HTML Element Using ElementRef 
+ #### 2. Reference a particular DOM element
 The Viewchild can also be used to query HTML elements.
 First, assign a Template variable (#para in the example below) to the HTML element. You can then use the ViewChild to query the element.
  ```Javascript
@@ -104,7 +105,7 @@ export class ParentComponent implements OnInit {
 }
 ```
 
- #### 2.Injecting HTML Element Using ElementRef 
+ #### 2. Reference a particular DOM element
  ```Javascript
  template
  --------
