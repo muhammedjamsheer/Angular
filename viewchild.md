@@ -115,8 +115,6 @@ export class ParentComponent implements OnInit {
 
 component
 ---------
-
-
 import { Component, OnInit, VERSION, ViewChildren, QueryList } from "@angular/core";
 
 @Component({
