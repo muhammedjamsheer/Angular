@@ -104,5 +104,50 @@ export class ParentComponent implements OnInit {
 }
 ```
 
+ #### 2.Injecting HTML Element Using ElementRef 
+ ```Javascript
+ template
+ --------
+<ul *ngFor="let category of categories;let i = index" #myItemLists>
+    <li (click)="getCategory($event, category, i)">{{ category.value }}</li>
+</ul>
+{{name}}
+
+component
+---------
+
+
+import { Component, OnInit, VERSION, ViewChildren, QueryList } from "@angular/core";
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.scss']
+})
+export class ParentComponent implements OnInit {
+  name = "Angular " + VERSION.major;
+  categories: any[] = [];
+  @ViewChildren('myItemLists') items: QueryList<any>;
+  constructor() { }
+
+  ngOnInit(): void {
+    this.categories = [
+      {
+        value: "Angular 8",
+      }, {
+        value: "Angular 9",
+      }, {
+        value: "Angular 10",
+      }
+    ];
+  }
+  getCategory(event:any, category:any, i:any) {
+    console.log('category clicked : ', category);
+    console.log('event : ', event);
+    console.log('index of category : ', i);
+    console.log('all items : ', this.items)
+  }
+}
+```
  
  
