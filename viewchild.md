@@ -18,7 +18,7 @@ We can use these references to manipulate element properties in the component.
  To resolve query results after the change detection runs, you need to set static option value as false. The default value of static option is false.            
  The value of the static becomes important when the child is rendered dynamically. For Example inside a ngIf or ngSwitch etc.              
  
- #### 1.Injecting Component or Directive Reference
+ #### 1.Injecting Component
  ```Javascript
  import { Component, ViewChild, AfterViewInit } from '@angular/core';
 
@@ -40,7 +40,7 @@ export class AppComponent implements AfterViewInit {
  ```
  
 
- #### 1.Injecting HTML Element Using ElementRef 
+ #### 2.Injecting HTML Element Using ElementRef 
 The Viewchild can also be used to query HTML elements.
 First, assign a Template variable (#para in the example below) to the HTML element. You can then use the ViewChild to query the element.
  ```Javascript
@@ -72,5 +72,37 @@ export class ViewchildComponent implements OnInit {
 }
  ```
  
+ ### ViewChildren         
+ViewChildren is another property decorator which is used to query the DOM for multiple elements and return a QueryList.      
+ 
+  #### 1.Injecting Component
+ ```Javascript
+ template
+ --------
+ <app-child name="Angular 6"></app-child>
+ <app-child name="Angular 7"></app-child>
+ <app-child name="Angular 8"></app-child>
+
+component
+---------
+import { Component, OnInit, ViewChildren, QueryList } from '@angular/core';
+import { ChildComponent } from '../child/child.component';
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.scss']
+})
+export class ParentComponent implements OnInit {
+  @ViewChildren(ChildComponent) child: QueryList<any>;
+  constructor() { }
+  ngOnInit(): void {}
+
+  ngAfterViewInit() {
+    this.child.forEach(child => console.log(child));
+  }
+}
+```
+
  
  
