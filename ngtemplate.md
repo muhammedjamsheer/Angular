@@ -42,3 +42,27 @@ To use this directive, first, we need to create the template and assign it to a 
     </ng-template>
   </div>
 ```
+The content inside the ngTemplateOutlet directive is not displayed. It replaces it with content it gets from the sayHelloTemplate.
+
+#### ngTemplateOutlet with terenary operater
+
+```html
+templateType:string="user";
+
+template
+-------
+  <div class="mt-3">
+    <ng-container *ngTemplateOutlet="templateType=='user' ? userTemplate: adminTemplate">
+      This text is not displayed
+    </ng-container>
+
+    <ng-template #userTemplate>
+      <p> User Template</p>
+    </ng-template>
+
+    <ng-template #adminTemplate>
+      <p> Admin Template</p>
+    </ng-template>
+  </div>
+```
+
