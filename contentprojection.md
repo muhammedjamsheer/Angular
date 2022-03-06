@@ -8,3 +8,23 @@ The ng-content also allows us to create multiple slots using the selector attrib
 The ng-content tag acts as a placeholder for inserting external or dynamic content.         
 The Parent component passes the external content to the child component.     
 When Angular parses the template, it inserts the external content where ng-content appears in the child component’s template
+
+parentComponent.html
+```html
+<div class="container">
+    <app-child>
+        <div class="card-header">
+            <h4>Header Content</h4>
+        </div>
+        <div class="card-body">
+            <h4>Body Content</h4>
+        </div>
+    </app-child>
+</div>
+```
+childComponent.html
+```html
+<div class="card">
+    <ng-content></ng-content>
+</div>
+```
