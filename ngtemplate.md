@@ -64,8 +64,8 @@ The content inside the ngTemplateOutlet directive is not displayed. It replaces 
   </div>
 ```
 
-### TemplateRef & ViewContainerRef
------------------------------------
+### TemplateRef 
+---------------
 TemplateRef is a class and the way to reference the ng-template in the component or directive class.              
 Using the TemplateRef we can manipulate the template from component code.
 
