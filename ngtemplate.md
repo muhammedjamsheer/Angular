@@ -47,10 +47,8 @@ The content inside the ngTemplateOutlet directive is not displayed. It replaces 
 #### ngTemplateOutlet with terenary operater
 
 ```html
-templateType:string="user";
+  templateType:string="user";
 
-template
--------
   <div class="mt-3">
     <ng-container *ngTemplateOutlet="templateType=='user' ? userTemplate: adminTemplate">
       This text is not displayed
@@ -66,3 +64,18 @@ template
   </div>
 ```
 
+### TemplateRef & ViewContainerRef
+-----------------------------------
+TemplateRef is a class and the way to reference the ng-template in the component or directive class.              
+Using the TemplateRef we can manipulate the template from component code.
+
+```html
+<ng-template #sayHelloTemplate>
+  <p> Say Hello</p>
+</ng-template>
+```
+
+Now, we can use the ViewChild query to inject the sayHelloTemplate into our component as an instance of the class TemplateRef
+```javascript
+@ViewChild('sayHelloTemplate', { read: TemplateRef }) sayHelloTemplate:TemplateRef<any>
+```
