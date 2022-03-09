@@ -13,7 +13,10 @@ https://www.stackchief.com/blog/ngOnChanges%20Example%20%7C%20Angular
 
 ### 1.ngOnChanges
 The Angular invokes ngOnChanges life cycle hook whenever any data-bound input property of the component or directive changes.                  
-This method receives a SimpeChanges object, which contains the current and previous property values.               
+This method receives a SimpeChanges object, which contains the current and previous property values.    
+Remember that only changes from the parent component will trigger the ngOnChanges() function.             
+Also, remember that changes from the parent still update the child value even without implementing ngOnChanges.            
+The ngOnChanges adds the benefit of tracking those changes with the previous and current value
 
 parentComponent.ts
 ```javascript
@@ -69,3 +72,27 @@ export class ChildComponent implements OnInit {
   }
 }
 ```
+
+### ngOnInit
+The ngOnInit or OnInit hook is called when the component is created for the first time.       
+This hook is fired only once and This hook is called after the constructor and first ngOnChanges hook is fired.
+This hook is fired before any of the child directive properties are initialized.
+This is a perfect place where you want to add any initialization logic for your component.
+
+```javascript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+
+export class HomeComponent implements OnInit {
+  constructor() { }
+  ngOnInit() {
+    console.log("component has been initialized!")
+  }
+}
+```
+
