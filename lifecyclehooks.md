@@ -75,9 +75,9 @@ export class ChildComponent implements OnInit {
 
 ### ngOnInit
 The ngOnInit or OnInit hook is called when the component is created for the first time.       
-This hook is fired only once and This hook is called after the constructor and first ngOnChanges hook is fired.
-This hook is fired before any of the child directive properties are initialized.
-This is a perfect place where you want to add any initialization logic for your component.
+This hook is fired only once and This hook is called after the constructor and first ngOnChanges hook is fired.             
+This hook is fired before any of the child directive properties are initialized.            
+This is a perfect place where you want to add any initialization logic for your component.              
 
 ```javascript
 import { Component, OnInit } from '@angular/core';
