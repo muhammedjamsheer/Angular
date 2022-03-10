@@ -97,10 +97,12 @@ export class HomeComponent implements OnInit {
 ```
 
 ### ngDoCheck
-
 OnChanges triggered every time when the Angular detected a change to the data-bound input property.    
 OnChanges does not fire when the input property is an array/object because Angular uses dirty checking to compare the properties.
 In such a scenario, where Angular fails to detect the changes to the input property, the DoCheck allows us to implement our custom change detection.
+
+ngDoCheck() is called whenever change detection is run.
+ngDoCheck() is called immediately after ngOnChanges() and ngOnInit()
 
 parentComponent.ts
 ```javascript
