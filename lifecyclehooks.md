@@ -103,7 +103,7 @@ OnChanges does not fire when the input property is an array/object because Angul
 In such a scenario, where Angular fails to detect the changes to the input property, the DoCheck allows us to implement our custom change detection.
 
 parentComponent.ts
-```javscript
+```javascript
 import { Component, OnInit } from "@angular/core";
 export class customerData {
   name: string;
@@ -136,7 +136,7 @@ parentComponent.html
 ```
 
 childComponent.ts
-```javscript
+```javascript
 import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 @Component({
   selector: 'app-child',
