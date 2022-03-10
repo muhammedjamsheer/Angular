@@ -96,3 +96,75 @@ export class HomeComponent implements OnInit {
 }
 ```
 
+### ngDoCheck
+
+OnChanges triggered every time when the Angular detected a change to the data-bound input property.    
+OnChanges does not fire when the input property is an array/object because Angular uses dirty checking to compare the properties.
+In such a scenario, where Angular fails to detect the changes to the input property, the DoCheck allows us to implement our custom change detection.
+
+parentComponent.ts
+```javscript
+import { Component, OnInit } from "@angular/core";
+export class customerData {
+  name: string;
+  address: string;
+}
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html',
+  styleUrls: ['./parent.component.scss']
+})
+
+export class ParentComponent implements OnInit {
+  customerDetails: customerData = new customerData();
+  constructor() { }
+  ngOnInit(): void {
+    this.customerDetails.name = "Jamsheer";
+    this.customerDetails.address = "Pattambi";
+  }
+  changeDetails() {
+    // this.customerDetails = new customerData();
+    this.customerDetails.name = "thafseer";
+    this.customerDetails.address = "Kannur";
+  }
+}
+```
+parentComponent.html
+```html
+<button class="btn btn-danger" (click)="changeDetails()">Click</button>
+<app-child [customerData]="customerDetails"></app-child>
+```
+
+childComponent.ts
+```javscript
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.scss'],
+
+})
+export class ChildComponent implements OnInit {
+  @Input() customerData: any;
+  name:string;
+  address:string;
+  constructor() { }
+
+  ngOnInit(): void { }
+
+  ngOnChanges(changes: SimpleChanges) {
+    this.name=this.customerData.name;
+    this.address=this.customerData.address;
+  }
+  ngDoCheck() {
+    this.name=this.customerData.name;
+    this.address=this.customerData.address;
+  }
+}
+```
+childComponent.html
+```html
+<p>Customer Name : {{name}}</p>
+<p>Customer Address : {{address}}</p>
+```
+
