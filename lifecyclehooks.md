@@ -101,8 +101,7 @@ OnChanges triggered every time when the Angular detected a change to the data-bo
 OnChanges does not fire when the input property is an array/object because Angular uses dirty checking to compare the properties.
 In such a scenario, where Angular fails to detect the changes to the input property, the DoCheck allows us to implement our custom change detection.
 
-ngDoCheck() is called whenever change detection is run.
-ngDoCheck() is called immediately after ngOnChanges() and ngOnInit()
+ ngDoCheck fires with every change detection cycle.It immediately after ngOnChanges() and ngOnInit()
 
 parentComponent.ts
 ```javascript
@@ -169,4 +168,15 @@ childComponent.html
 <p>Customer Name : {{name}}</p>
 <p>Customer Address : {{address}}</p>
 ```
+
+### ngAfterViewInit
+ngAfterViewInit hook is called after the Component’s View & all its child views are fully initialized.
+Angular also updates the properties decorated with the ViewChild & ViewChildren properties before raising this hook. 
+ngAfterViewInit waits on @ViewChild(ren) queries to resolve. These elements are queried from within the same view of the component.
+
+### ngAfterViewChecked() 
+This event is fired after the ngAfterViewInit.The Angular fires this hook after it checks & updates the component’s views and child views. 
+This hook is very similar to the ngAfterViewInit hook. Both are called after all the child components & directives are initialized and updated.
+Only difference is that ngAfterViewChecked is raised during every change detection cycle. While ngAfterViewInit during the first change detection cycle 
+
 
